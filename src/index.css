@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import 'tw-animate-css';
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+
+
+:root {
+  --background: #1a3a3a;
+  --foreground: #ffffff;
+  --accent: #D4F157;
+  --muted: #b0b0b0;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#1a3a3a] text-white;
+  }
+}
+
+@layer components {
+  .container-max {
+    @apply max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .heading-xl {
+    @apply text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply text-4xl md:text-5xl font-poppins font-bold leading-tight;
+  }
+  
+  .heading-md {
+    @apply text-3xl md:text-4xl font-poppins font-bold;
+  }
+  
+  .text-body {
+    @apply text-lg leading-relaxed text-[#b0b0b0];
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 border border-white text-white font-poppins font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300;
+  }
+  
+  .section-spacing {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .scale-in {
+    animation: scaleIn 0.8s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
