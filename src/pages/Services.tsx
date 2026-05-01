@@ -50,7 +50,7 @@ Every project we work on, we ask the questions: What will your brand represent? 
               </p>
             </div>
             <div className="flex justify-center">
-              <img src="/annieunsplash.jpg" alt="Brand concept" className="w-210 h-110  object-contain" />
+              <img src="/annieunsplash (1).jpg" alt="Brand concept" className="w-210 h-110  object-contain" />
             </div>
           </div>
         </div>

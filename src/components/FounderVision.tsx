@@ -36,7 +36,7 @@ export default function FounderVision() {
           {/* Right Side - Founder Image */}
           <div className="relative h-96 md:h-full">
             <img
-              src="/FoundersImg.jpg"
+              src="/FoundersImg (1).jpg"
               alt="Morenike Olaolu - Founder"
               className="w-full h-full object-cover rounded-2xl"
             />

@@ -59,12 +59,12 @@ export default function ContactsPage() {
         </div>
       </section>
 
-      {/* Section 2: Two Contact Options */}
+      {/* Section 2: Two Contact Options
       <section className="bg-[#ededda] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Option 1: Calendly */}
-            <div>
+            {/* <div>
               <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a] mb-6">
                 Option 1. Online Meeting with Our Team
               </h2>
@@ -86,10 +86,10 @@ export default function ContactsPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Option 2: Contact Form Start */}
-            <div>
+            {/* <div>
               <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a] mb-6">
                 Option 2. Contact Our Branding Agency
               </h2>
@@ -123,14 +123,14 @@ export default function ContactsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section 3: Form Continuation */}
-      <section className="bg-[#ededda] py-20 md:py-28">
+      {/* <section className="bg-[#ededda] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Calendar & Timezone */}
-            <div>
+            {/* <div>
               <p className="text-lg font-bold text-[#1a3a3a] mb-4">Time zone</p>
               <div className="bg-[#D4F157] rounded-2xl p-6 mb-8">
                 <div className="flex items-center gap-2 text-[#1a3a3a] font-bold text-lg">
@@ -145,10 +145,11 @@ export default function ContactsPage() {
                   <span className="text-sm font-bold text-gray-600">&gt;</span>
                 </div>
               </div>
-            </div>
+            </div> */} 
 
             {/* Form Continuation */}
-            <form onSubmit={handleSubmit} className="space-y-6">
+ 
+ {/*            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-lg font-bold text-[#1a3a3a] mb-3">
                   Please tell us a bit more about your project
@@ -194,7 +195,152 @@ export default function ContactsPage() {
             </form>
           </div>
         </div>
-      </section>
+      </section> 
+      */}
+
+      {/* Contact Section */}
+<section className="bg-[#ededda] py-20 md:py-28">
+  <div className="container-max">
+    <div className="max-w-6xl mx-auto">
+
+      {/* Heading */}
+      <div className="mb-16">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#1a3a3a] mb-6">
+          Let&apos;s Build Something Exceptional
+        </h2>
+
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl">
+          Tell us about your brand, your goals, and your vision. Our international
+          branding agency team will review your project and get back to you shortly.
+        </p>
+      </div>
+
+      {/* SINGLE FORM */}
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white rounded-[32px] p-8 md:p-14 shadow-sm border border-gray-200"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          {/* LEFT SIDE */}
+          <div className="space-y-8">
+
+            {/* Name */}
+            <div>
+              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+                Your Name
+              </label>
+
+              <input
+                required
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="John Doe"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+                Your Email
+              </label>
+
+              <input
+                required
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="you@example.com"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+              />
+            </div>
+
+            {/* Budget */}
+            <div>
+              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+                Budget Range
+              </label>
+
+              <select
+                required
+                name="budget"
+                value={formData.budget}
+                onChange={handleInputChange}
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+              >
+                <option value="">Select your budget</option>
+                <option value="5k-10k">$5,000 - $10,000</option>
+                <option value="10k-25k">$10,000 - $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k+">$50,000+</option>
+              </select>
+            </div>
+
+            {/* Timezone Box */}
+            <div className="bg-[#D4F157] rounded-2xl p-6">
+              <p className="text-[#1a3a3a] font-bold text-lg mb-2">
+                🌍 International Team
+              </p>
+
+              <p className="text-[#1a3a3a]/80 leading-relaxed">
+                We work with brands globally across London, Dubai, and Istanbul.
+              </p>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="flex flex-col">
+
+            {/* Project Details */}
+            <div className="flex-1">
+              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+                Tell Us About Your Project
+              </label>
+
+              <textarea
+                required
+                name="projectDetails"
+                value={formData.projectDetails}
+                onChange={handleInputChange}
+                placeholder="Describe your project goals, target audience, brand vision, timelines, challenges, and anything else you'd like us to know..."
+                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+              />
+            </div>
+
+            {/* Checkbox */}
+            <div className="flex items-center gap-3 mt-6">
+              <input
+                required
+                type="checkbox"
+                id="robot"
+                className="w-5 h-5 rounded border-gray-300"
+              />
+
+              <label
+                htmlFor="robot"
+                className="text-gray-700 text-sm md:text-base"
+              >
+                I confirm that this inquiry is genuine.
+              </label>
+            </div>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              className="mt-8 w-full py-5 bg-[#1a3a3a] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
+            >
+              Send Project Request
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
       {/* Section 4: Offices Highlight */}
       <section className="bg-[#1a3a3a] py-20 md:py-28">

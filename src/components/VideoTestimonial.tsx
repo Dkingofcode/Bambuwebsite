@@ -1,6 +1,8 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import Player from '@vimeo/player';
+
 
 export default function VideoTestimonial() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -8,23 +10,73 @@ export default function VideoTestimonial() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const playerRef = useRef<Player | null>(null);
 
-  const handlePlayClick = () => {
-    setIsPlaying(true);
-    if (iframeRef.current) {
-      iframeRef.current.style.display = 'block';
-    }
-  };
-  console.log(setCurrentTime(currentTime));
-  console.log(setDuration(duration));
+useEffect(() => {
+  if (iframeRef.current) {
+    const player = new Player(iframeRef.current);
 
-  const handlePauseClick = () => {
-    setIsPlaying(false);
-  };
+    playerRef.current = player;
 
-  const handleMuteClick = () => {
-    setIsMuted(!isMuted);
-  };
+    // Get duration
+    player.getDuration().then((dur) => {
+      setDuration(dur);
+    });
+
+    // Track current time
+    player.on('timeupdate', (data) => {
+      setCurrentTime(data.seconds);
+    });
+  }
+}, []);
+
+  // const handlePlayClick = () => {
+  //   setIsPlaying(true);
+  //   if (iframeRef.current) {
+  //     iframeRef.current.style.display = 'block';
+  //   }
+  // };
+
+  const handlePlayClick = async () => {
+  setIsPlaying(true);
+
+  try {
+    await playerRef.current?.play();
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
+  // const handlePauseClick = () => {
+  //   setIsPlaying(false);
+  // };
+
+  const handlePauseClick = async () => {
+  setIsPlaying(false);
+
+  try {
+    await playerRef.current?.pause();
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+  // const handleMuteClick = () => {
+  //   setIsMuted(!isMuted);
+  // };
+
+  const handleMuteClick = async () => {
+  try {
+    const newMutedState = !isMuted;
+
+    setIsMuted(newMutedState);
+
+    await playerRef.current?.setMuted(newMutedState);
+  } catch (error) {
+    console.error(error);
+  }
+};
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -102,7 +154,7 @@ export default function VideoTestimonial() {
               {/* Vimeo iframe */}
               <iframe
                 ref={iframeRef}
-                src="https://player.vimeo.com/video/1167997297?badge=0&autopause=0&player_id=0&app_id=58479&background=0&muted=0&loop=1&controls=0&title=0&byline=0&portrait=0"
+                src="https://player.vimeo.com/video/1167997297?badge=0&autopause=0&player_id=0&app_id=58479&background=0&muted=0&loop=1&controls=0&autoplay=1&title=0&byline=0&portrait=0"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 referrerPolicy="strict-origin-when-cross-origin"
