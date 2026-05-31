@@ -1,6 +1,6 @@
 import Navigation from '../components/Navigation';
 import PortfolioShowcase from '../components/PortfolioShowcase';
-import Testimonials from '../components/Testimonials';
+//import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 
 export const metadata = {

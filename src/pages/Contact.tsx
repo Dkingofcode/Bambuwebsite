@@ -1,33 +1,33 @@
 'use client';
 
-import { useState } from 'react';
+//import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 export default function ContactsPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    projectDetails: '',
-    budget: '',
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   projectDetails: '',
+  //   budget: '',
+  // });
 
-  const locations = [
-    { name: 'London', description: 'Top Branding Agency In London' },
-    { name: 'Istanbul', description: 'Top Branding Agency In Istanbul' },
-    { name: 'Dubai', description: 'Top Branding Agency In Dubai' },
-  ];
+  // const locations = [
+  //   { name: 'London', description: 'Top Branding Agency In London' },
+  //   { name: 'Istanbul', description: 'Top Branding Agency In Istanbul' },
+  //   { name: 'Dubai', description: 'Top Branding Agency In Dubai' },
+  // ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({ ...prev, [name]: value }));
+  // };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  // };
 
   return (
     <main>

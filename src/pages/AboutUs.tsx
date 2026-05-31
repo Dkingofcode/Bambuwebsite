@@ -4,7 +4,7 @@ import Partners from '../components/Patners';
 import FounderVision from '../components/FounderVision';
 import CreativeTeamCarousel from '../components/CreativeTeamCarousel';
 import Methodology from '../components/Methodology';
-import FinalCTA from '../components/FinalCTA';
+//import FinalCTA from '../components/FinalCTA';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 

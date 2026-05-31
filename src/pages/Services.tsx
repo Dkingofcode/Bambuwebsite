@@ -2,7 +2,7 @@ import Navigation from '../components/Navigation';
 import PortfolioCarousel from '../components/PortfolioCarousel';
 //import ServiceSlides from '../components/ServiceSlides';
 import FAQ from '../components/FAQ';
-import FinalCTA from '../components/FinalCTA';
+//import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 
 export const metadata = {

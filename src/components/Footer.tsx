@@ -5,39 +5,39 @@ import {Link} from 'react-router-dom';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const locations = [
-    {
-      name: 'London',
-      address: '167-169 Great Portland Street, 5th Floor\nW1W 5PF London',
-    },
-    {
-      name: 'Istanbul',
-      address: 'Harbiye Mh. Bostan Sok. LV Orjin Apt. 15/5\nNişantaşı Şişli\nIstanbul Turkiye 34367',
-    },
-    {
-      name: 'Dubai',
-      address: 'Level 27, Unit 2705, Marina Plaza,\nDubai, United Arab Emirates',
-    },
-    {
-      name: 'Antalya',
-      address: 'Liman Mah. 23. Sok. 12/A D:3\nKonyaaltı\nAntalya, Turkey 07130',
-    },
-  ];
+  // const locations = [
+  //   {
+  //     name: 'London',
+  //     address: '167-169 Great Portland Street, 5th Floor\nW1W 5PF London',
+  //   },
+  //   {
+  //     name: 'Istanbul',
+  //     address: 'Harbiye Mh. Bostan Sok. LV Orjin Apt. 15/5\nNişantaşı Şişli\nIstanbul Turkiye 34367',
+  //   },
+  //   {
+  //     name: 'Dubai',
+  //     address: 'Level 27, Unit 2705, Marina Plaza,\nDubai, United Arab Emirates',
+  //   },
+  //   {
+  //     name: 'Antalya',
+  //     address: 'Liman Mah. 23. Sok. 12/A D:3\nKonyaaltı\nAntalya, Turkey 07130',
+  //   },
+  // ];
 
-  const blogPosts = [
-    {
-      title: 'How to Build Trust in 0.3 Seconds Through Branding, Packaging and Web Experience',
-      href: '#',
-    },
-    {
-      title: 'Why Simplicity Is the Ultimate Luxury in Branding',
-      href: '#',
-    },
-    {
-      title: 'How to Build a Product Brand That Feels Expensive Without Spending Millions',
-      href: '#',
-    },
-  ];
+  // const blogPosts = [
+  //   {
+  //     title: 'How to Build Trust in 0.3 Seconds Through Branding, Packaging and Web Experience',
+  //     href: '#',
+  //   },
+  //   {
+  //     title: 'Why Simplicity Is the Ultimate Luxury in Branding',
+  //     href: '#',
+  //   },
+  //   {
+  //     title: 'How to Build a Product Brand That Feels Expensive Without Spending Millions',
+  //     href: '#',
+  //   },
+  // ];
 
   return (
     <footer className="bg-[#325432]">
