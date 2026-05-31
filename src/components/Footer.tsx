@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#1a3a3a]">
+    <footer className="bg-[#325432]">
       {/* Contact Information */}
       <div className="border-b border-white/10">
         <div className="container-max py-12">
@@ -81,7 +81,7 @@ export default function Footer() {
           </div>
 
           {/* Office Locations */}
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <h3 className="font-poppins font-bold text-white mb-6">Our Offices</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {locations.map((location) => (
@@ -92,10 +92,10 @@ export default function Footer() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Blog Posts */}
-        <div className="border-t border-white/10 pt-12 mb-12">
+        {/* <div className="border-t border-white/10 pt-12 mb-12">
           <h3 className="font-poppins font-bold text-white mb-8">Recent posts from Blog</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.map((post, index) => (
@@ -108,7 +108,8 @@ export default function Footer() {
               </a>
             ))}
           </div>
-        </div>
+          */}
+        </div>     
 
         {/* Bottom Footer */}
         <div className="border-t border-white/10 pt-12">

@@ -34,7 +34,7 @@ export default function ContactsPage() {
       <Navigation />
 
       {/* Section 1: Hero with Locations */}
-      <section className="bg-[#1a3a3a] py-20 md:py-28">
+      {/* <section className="bg-[#1a3a3a] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
@@ -47,7 +47,7 @@ export default function ContactsPage() {
             </div>
           </div>
 
-          {/* Location Cards */}
+          {/* Location Cards 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {locations.map((location) => (
               <div key={location.name} className="bg-white rounded-2xl p-8">
@@ -57,7 +57,8 @@ export default function ContactsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
+      */}
 
       {/* Section 2: Two Contact Options
       <section className="bg-[#ededda] py-20 md:py-28">
@@ -199,11 +200,11 @@ export default function ContactsPage() {
       */}
 
       {/* Contact Section */}
-<section className="bg-[#ededda] py-20 md:py-28">
+{/* <section className="bg-[#ededda] py-20 md:py-28">
   <div className="container-max">
     <div className="max-w-6xl mx-auto">
 
-      {/* Heading */}
+      {/* Heading 
       <div className="mb-16">
         <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#1a3a3a] mb-6">
           Let&apos;s Build Something Exceptional
@@ -215,17 +216,17 @@ export default function ContactsPage() {
         </p>
       </div>
 
-      {/* SINGLE FORM */}
+      {/* SINGLE FORM 
       <form
         onSubmit={handleSubmit}
         className="bg-white rounded-[32px] p-8 md:p-14 shadow-sm border border-gray-200"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE 
           <div className="space-y-8">
 
-            {/* Name */}
+            {/* Name 
             <div>
               <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
                 Your Name
@@ -242,7 +243,7 @@ export default function ContactsPage() {
               />
             </div>
 
-            {/* Email */}
+            {/* Email 
             <div>
               <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
                 Your Email
@@ -259,7 +260,7 @@ export default function ContactsPage() {
               />
             </div>
 
-            {/* Budget */}
+            {/* Budget 
             <div>
               <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
                 Budget Range
@@ -280,7 +281,7 @@ export default function ContactsPage() {
               </select>
             </div>
 
-            {/* Timezone Box */}
+            {/* Timezone Box 
             <div className="bg-[#D4F157] rounded-2xl p-6">
               <p className="text-[#1a3a3a] font-bold text-lg mb-2">
                 🌍 International Team
@@ -292,10 +293,10 @@ export default function ContactsPage() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
+          {/* RIGHT SIDE 
           <div className="flex flex-col">
 
-            {/* Project Details */}
+            {/* Project Details 
             <div className="flex-1">
               <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
                 Tell Us About Your Project
@@ -311,7 +312,7 @@ export default function ContactsPage() {
               />
             </div>
 
-            {/* Checkbox */}
+            {/* Checkbox 
             <div className="flex items-center gap-3 mt-6">
               <input
                 required
@@ -328,7 +329,7 @@ export default function ContactsPage() {
               </label>
             </div>
 
-            {/* Submit */}
+            {/* Submit 
             <button
               type="submit"
               className="mt-8 w-full py-5 bg-[#1a3a3a] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
@@ -340,27 +341,27 @@ export default function ContactsPage() {
       </form>
     </div>
   </div>
-</section>
+</section> */}
 
       {/* Section 4: Offices Highlight */}
-      <section className="bg-[#1a3a3a] py-20 md:py-28">
+      <section className="bg-[#325432] py-20 md:py-28">
         <div className="container-max">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-white mb-12 text-center">
             Contact Our International Branding Agency
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {locations.map((location) => (
               <div key={location.name} className="bg-white rounded-2xl p-8">
                 <h3 className="text-3xl font-poppins font-bold text-[#7fb3d5] mb-2">{location.name}</h3>
                 <p className="text-gray-700">{location.description}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Section 5: CTA */}
-      <section className="bg-[#1a3a3a] py-20 md:py-28">
+      <section className="bg-[#325432] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">

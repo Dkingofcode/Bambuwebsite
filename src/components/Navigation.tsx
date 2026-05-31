@@ -18,10 +18,11 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-[#1a3a3a]/95 backdrop-blur-md z-50 border-b border-white/10">
+    <nav className="fixed top-0 w-full bg-[#325432]/95 backdrop-blur-md z-50 border-b border-white/10">
       <div className="container-max flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
+        <img className='w-11 h-10' src='/ICON.png'  />
           <div className="text-2xl font-poppins font-bold text-[#D4F157]">BAMBU</div>
         </Link>
 

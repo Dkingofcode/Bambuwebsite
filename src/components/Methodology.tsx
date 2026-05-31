@@ -25,7 +25,7 @@ export default function Methodology() {
   ];
 
   return (
-    <section className="bg-[#ededda] py-20 md:py-28">
+    <section className="bg-[#D9DECC] py-20 md:py-28">
       <div className="container-max">
         {/* Header */}
         <div className="mb-16">
@@ -63,13 +63,13 @@ export default function Methodology() {
         </div>
 
         {/* Full Methodology Image */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/methodology-JfayidJzN6HjjboXhxnuzvI27kGlpm.png"
             alt="Complete Methodology Flow"
             className="w-full rounded-2xl shadow-lg"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

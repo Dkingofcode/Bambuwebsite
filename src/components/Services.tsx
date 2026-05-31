@@ -14,7 +14,7 @@ function ServiceCard({ service }: { service: Service; index: number }) {
 
   return (
     <div
-      className="bg-[#0f2a2a] border border-white/10 rounded-xl p-8 hover:border-[#D4F157] transition-all duration-300 cursor-pointer"
+      className="bg-[#11211F] border border-white/10 rounded-xl p-8 hover:border-[#D4F157] transition-all duration-300 cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="text-4xl mb-4">{service.icon}</div>
@@ -135,7 +135,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="section-spacing bg-[#1a3a3a]">
+    <section id="services" className="section-spacing bg-[#325432]">
       <div className="container-max">
         <h2 className="heading-lg mb-12 text-center">
           Our <span className="text-[#D4F157]">Services</span>

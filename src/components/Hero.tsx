@@ -71,7 +71,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="bg-[#1a3a3a] py-20 md:py-28">
+    <section className="bg-[#325432] py-20 md:py-28">
       <div className="container-max">
         {/* Top Section - Text & Description */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-start">

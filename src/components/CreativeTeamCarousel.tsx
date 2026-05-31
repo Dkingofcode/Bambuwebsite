@@ -76,7 +76,7 @@ export default function CreativeTeamCarousel() {
   const current = teamMembers[currentIndex];
 
   return (
-    <section className="bg-[#ededda] py-20 md:py-28">
+    <section className="bg-[#D9DECC] py-20 md:py-28">
       <div className="container-max">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#1a3a3a] mb-16 text-center">

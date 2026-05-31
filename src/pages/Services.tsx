@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Heading & Text One */}
-      <section className="bg-[#ededda] py-20 md:py-28">
+      <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
             The Work That <span className="text-[#D4F157]">Moves the Business.</span>
@@ -33,7 +33,7 @@ export default function ServicesPage() {
       <PortfolioCarousel />
 
       {/* Heading & Text Two */}
-      <section className="bg-[#ededda] py-20 md:py-28">
+      <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
           <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
             What We Do. What <span className="text-[#D4F157]">Moves Brands.</span>
@@ -63,7 +63,7 @@ Every project we work on, we ask the questions: What will your brand represent? 
       <FAQ />
 
       {/* Final CTA */}
-      <FinalCTA />
+      {/* <FinalCTA /> */}
 
       <Footer />
     </main>

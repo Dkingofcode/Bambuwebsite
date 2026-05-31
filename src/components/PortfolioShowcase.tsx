@@ -48,7 +48,7 @@ export default function PortfolioShowcase() {
   });
 
   return (
-    <section className="bg-[#1a3a3a] py-20 md:py-28">
+    <section className="bg-[#325432] py-20 md:py-28">
       <div className="container-max">
         {/* Header */}
         <div className="mb-12">

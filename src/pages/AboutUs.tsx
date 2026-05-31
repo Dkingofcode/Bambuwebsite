@@ -22,7 +22,7 @@ export default function AboutUsPage() {
       <FounderVision />
       <CreativeTeamCarousel />
       <Methodology />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
       <FAQ />
       <Footer />
     </main>

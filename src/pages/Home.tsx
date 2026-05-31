@@ -16,20 +16,20 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-[#1a3a3a]">
+    <main className="bg-[#000]">
       <Navigation />
       <VideoHero />
       <Hero />
       <Partners />
       <Stats />
-      <VideoTestimonial />
-      <PortfolioShowcase />
-      <CTASection />
+      {/* <VideoTestimonial />
+      <PortfolioShowcase /> */}
+      {/* <CTASection />
       <BrandingStrategy />
-      <Testimonials />
+      <Testimonials /> */}
       <Services />
-      <CaseStudies />
-      <FinalCTA />
+      {/* <CaseStudies />
+      <FinalCTA /> */}
       <FAQ />
       <Footer />
     </main>

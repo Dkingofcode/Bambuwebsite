@@ -72,7 +72,7 @@ export default function PortfolioCarousel() {
   }, []);
 
   return (
-    <section className="bg-[#ededda] py-20 md:py-28">
+    <section className="bg-[#D9DECC] py-20 md:py-28">
       <div className="container-max">
 
         {/* Portfolio Gallery Section */}

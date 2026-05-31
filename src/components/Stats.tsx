@@ -74,7 +74,7 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="bg-[#e3e2d5] py-20 md:py-28 relative overflow-hidden">
+    <section className="bg-[#D9DECC] py-20 md:py-28 relative overflow-hidden">
       {/* Animated Background SVG Elements */}
       <div className="markaworks-floating-bg markaworks-floating-bg-1 absolute top-10 left-10 opacity-20 pointer-events-none" style={{ animation: 'float 6s ease-in-out infinite' }}>
         <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">

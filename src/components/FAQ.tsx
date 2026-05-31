@@ -83,7 +83,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="section-spacing bg-[#ededda] relative overflow-hidden">
+    <section id="faq" className="section-spacing bg-[#D9DECC] relative overflow-hidden">
       {/* Decorative rotating SVG elements */}
       <div className="absolute top-0 left-12 w-40 h-40 opacity-15 pointer-events-none" style={{ animation: 'spin 20s linear infinite' }}>
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@ export default function FAQ() {
         </div>
 
         {/* Contact CTA */}
-        <div className="mt-16 text-center p-8 bg-white rounded-xl border border-[#D4F157]">
+        {/* <div className="mt-16 text-center p-8 bg-white rounded-xl border border-[#D4F157]">
           <h3 className="heading-md mb-4 text-[#1a3a3a]">Still have questions?</h3>
           <p className="text-gray-700 mb-6">
             Our team is ready to discuss your branding needs and answer any questions you might have.
@@ -127,7 +127,7 @@ export default function FAQ() {
           <a href="/contact-us/" className="inline-block px-8 py-3 bg-[#D4F157] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-colors">
             Schedule a Consultation
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

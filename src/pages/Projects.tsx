@@ -14,10 +14,10 @@ export default function ProjectsPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#1a3a3a] py-20 md:py-28">
+      <section className="bg-[#325432] py-20 md:py-28">
         <div className="container-max">
           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-white mb-6">
-            Our <span className="text-[#D4F157]">Projects</span>
+            Our <span className="text-[#E7B621]">Projects</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl">
             Explore the transformative work we&apos;ve done for leading brands across industries.
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
       <PortfolioShowcase />
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       <Footer />
     </main>
