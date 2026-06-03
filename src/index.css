@@ -14,7 +14,7 @@
 
 
 :root {
-  --background: #ef0a0a;
+  --background: #325432;
   --foreground: #ffffff;
   --accent: #E7B621;
   --muted: #b0b0b0;
@@ -26,7 +26,7 @@
   --font-mono: 'Courier New', monospace;
 }
 
-@layer base {
+/* @layer base {
   * {
     margin: 0;
     padding: 0;
@@ -37,8 +37,31 @@
     scroll-behavior: smooth;
   }
   
+  html,
   body {
     @apply bg-[#ef0a0a] text-white;
+  }
+} */
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #325432;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #325432;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
   }
 }
 
