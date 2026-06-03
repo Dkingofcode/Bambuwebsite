@@ -34,7 +34,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
         </div>
       </div>
 
-      <h3 className="heading-md mb-2 group-hover:text-[#D4F157] transition-colors">
+      <h3 className="heading-md mb-2 group-hover:text-[#E7B621] transition-colors">
         {study.title}
       </h3>
       <p className="text-[#b0b0b0] mb-4">{study.description}</p>
@@ -43,7 +43,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       <div className="grid grid-cols-2 gap-4">
         {study.metrics.map((metric) => (
           <div key={metric.label} className="bg-[#0f2a2a] rounded-lg p-3">
-            <p className="text-[#D4F157] font-bold">{metric.value}</p>
+            <p className="text-[#E7B621] font-bold">{metric.value}</p>
             <p className="text-xs text-[#b0b0b0]">{metric.label}</p>
           </div>
         ))}
@@ -127,7 +127,7 @@ export default function CaseStudies() {
     <section id="work" className="section-spacing bg-[#1a3a3a]">
       <div className="container-max">
         <h2 className="heading-lg mb-12 text-center">
-          Featured <span className="text-[#D4F157]">Work</span>
+          Featured <span className="text-[#E7B621]">Work</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">

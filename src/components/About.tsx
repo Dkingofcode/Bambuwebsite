@@ -49,9 +49,9 @@ function StatCounter({ stat }: { stat: Stat }) {
   return (
     <div
       ref={ref}
-      className="text-center p-8 bg-[#0f2a2a] rounded-lg border border-white/10 hover:border-[#D4F157] transition-all duration-300"
+      className="text-center p-8 bg-[#0f2a2a] rounded-lg border border-white/10 hover:border-[#E7B621] transition-all duration-300"
     >
-      <div className="text-5xl md:text-6xl font-poppins font-bold mb-4 text-[#D4F157]">
+      <div className="text-5xl md:text-6xl font-poppins font-bold mb-4 text-[#E7B621]">
         {count}
         {stat.suffix}
       </div>
@@ -74,7 +74,7 @@ export default function About() {
         {/* Section Title */}
         <div className="mb-16">
           <h2 className="heading-lg mb-4">
-            Everyone <span className="text-[#D4F157]">Designs</span>
+            Everyone <span className="text-[#E7B621]">Designs</span>
           </h2>
           <p className="text-body max-w-3xl">
             But few truly understand the strategy behind transformative design. At MarkaWorks, we blend creative excellence with strategic thinking to deliver brands that matter. Our team of world-class designers and strategists craft visual identities that not only look stunning but drive real business results.
@@ -95,7 +95,7 @@ export default function About() {
             <div className="text-center">
               <div className="inline-block mb-4">
                 <svg
-                  className="w-20 h-20 text-[#D4F157]"
+                  className="w-20 h-20 text-[#E7B621]"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

@@ -21,10 +21,75 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-[#325432]/95 backdrop-blur-md z-50 border-b border-white/10">
       <div className="container-max flex items-center justify-between py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-        <img className='w-11 h-10' src='/ICON.png'  />
-          <div className="text-2xl font-poppins font-bold text-[#D4F157]">BAMBU</div>
-        </Link>
+        {/* <Link to="/" className="flex items-center gap-2">
+        <img className='w-8 h-10' src='/ICON.png'  />
+          <div className="text-2xl font-poppins font-bold text-[#E7B621]">BAMBU</div>
+        </Link> */}
+
+
+         <Link to="/" className="flex items-center gap-3">
+  <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg">
+    <img
+      className="w-8 h-10 object-contain"
+      src="/ICON.png"
+      alt="BAMBU Logo"
+    />
+  </div>
+
+  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+    BAMBU
+  </div>
+</Link> 
+
+
+
+{/* 
+
+<Link to="/" className="flex items-center gap-3">
+  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg">
+    <img
+      className="w-8 h-10 object-contain"
+      src="/ICON.png"
+      alt="BAMBU Logo"
+    />
+  </div>
+
+  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+    BAMBU
+  </div>
+</Link> */}
+
+
+
+
+{/* <Link to="/" className="flex items-center gap-3 group">
+  <div
+    className="
+      flex items-center justify-center
+      w-14 h-14
+      rounded-2xl
+      bg-gradient-to-br
+      from-white/20
+      to-white/5
+      border border-white/20
+      backdrop-blur-md
+      shadow-lg
+      transition-all duration-300
+      group-hover:scale-105
+    "
+  >
+    <img
+      className="w-8 h-10 object-contain"
+      src="/ICON.png"
+      alt="BAMBU Logo"
+    />
+  </div>
+
+  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+    BAMBU
+  </div>
+</Link> */}
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
@@ -35,11 +100,11 @@ export default function Navigation() {
                 key={link.name}
                 to={link.href}
                 className={`relative transition-colors duration-300 font-medium group ${
-                  active ? 'text-[#D4F157]' : 'text-white hover:text-[#D4F157]'
+                  active ? 'text-[#E7B621]' : 'text-white hover:text-[#E7B621]'
                 }`}
               >
                 {link.name}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#D4F157] transition-all duration-300 ${
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#E7B621] transition-all duration-300 ${
                   active ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}></span>
               </Link>
@@ -80,7 +145,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#0f2a2a] border-t border-white/10">
+        <div className="md:hidden bg-[#11211F] border-t border-white/10">
           <div className="container-max flex flex-col gap-4 py-4">
             {navLinks.map((link) => {
               const active = pathname === link.href;
@@ -89,7 +154,7 @@ export default function Navigation() {
                   key={link.name}
                   to={link.href}
                   className={`transition-colors duration-300 ${
-                    active ? 'text-[#D4F157] font-bold' : 'text-white hover:text-[#D4F157]'
+                    active ? 'text-[#E7B621] font-bold' : 'text-white hover:text-[#E7B621]'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

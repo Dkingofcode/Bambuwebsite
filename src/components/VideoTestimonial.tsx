@@ -85,7 +85,7 @@ useEffect(() => {
   };
 
   return (
-    <section className="bg-[#D4F157] py-20 md:py-28 relative overflow-hidden">
+    <section className="bg-[#E7B621] py-20 md:py-28 relative overflow-hidden">
       <div className="container-max">
         {/* Video Container */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
@@ -104,15 +104,15 @@ useEffect(() => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative w-32 h-32">
                       <div
-                        className="absolute inset-0 rounded-full border-2 border-[#D4F157] opacity-30"
+                        className="absolute inset-0 rounded-full border-2 border-[#E7B621] opacity-30"
                         style={{ animation: 'pulse 2s ease-in-out infinite' }}
                       />
                       <div
-                        className="absolute inset-4 rounded-full border-2 border-[#D4F157] opacity-20"
+                        className="absolute inset-4 rounded-full border-2 border-[#E7B621] opacity-20"
                         style={{ animation: 'pulse 2s ease-in-out infinite 0.5s' }}
                       />
                       <div
-                        className="absolute inset-8 rounded-full border-2 border-[#D4F157] opacity-10"
+                        className="absolute inset-8 rounded-full border-2 border-[#E7B621] opacity-10"
                         style={{ animation: 'pulse 2s ease-in-out infinite 1s' }}
                       />
                     </div>
@@ -182,7 +182,7 @@ useEffect(() => {
                   <div className="flex items-center gap-4">
                     <button
                       onClick={handleMuteClick}
-                      className="p-1 hover:text-[#D4F157] transition-colors"
+                      className="p-1 hover:text-[#E7B621] transition-colors"
                       aria-label="Mute/Unmute"
                     >
                       <svg
@@ -203,7 +203,7 @@ useEffect(() => {
                     </button>
                     <button
                       onClick={handlePauseClick}
-                      className="px-4 py-2 bg-[#D4F157] text-[#1a3a3a] rounded-lg hover:bg-[#E0F77D] transition-all duration-300 font-semibold text-sm"
+                      className="px-4 py-2 bg-[#E7B621] text-[#1a3a3a] rounded-lg hover:bg-[#E0F77D] transition-all duration-300 font-semibold text-sm"
                     >
                       Pause
                     </button>
@@ -233,7 +233,7 @@ useEffect(() => {
                   href="https://birtznutrition.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#D4F157] text-xs font-medium hover:underline"
+                  className="text-[#E7B621] text-xs font-medium hover:underline"
                 >
                   birtznutrition.com
                 </a>

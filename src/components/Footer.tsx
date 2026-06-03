@@ -47,13 +47,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="font-poppins font-bold text-white mb-2">Have questions?</h3>
-              <a href="tel:+234 806 465 6195" className="text-lg text-[#D4F157] hover:text-white transition-colors font-bold">
+              <a href="tel:+234 806 465 6195" className="text-lg text-[#E7B621] hover:text-white transition-colors font-bold">
                 +234 806 465 6195
               </a>
             </div>
             <div>
               <h3 className="font-poppins font-bold text-white mb-2">Let&apos;s talk</h3>
-              <a href="mailto:thebambuagency@gmail.com" className="text-lg text-[#D4F157] hover:text-white transition-colors font-bold">
+              <a href="mailto:thebambuagency@gmail.com" className="text-lg text-[#E7B621] hover:text-white transition-colors font-bold">
                 thebambuagency@gmail.com
               </a>
             </div>
@@ -67,13 +67,13 @@ export default function Footer() {
           {/* Calendly Section */}
           <div>
             <h3 className="font-poppins font-bold text-white mb-6">Schedule a Call</h3>
-            <div className="bg-[#0f2a2a] rounded-lg p-6 border border-white/10 text-center">
+            <div className="bg-[#11211F] rounded-lg p-6 border border-white/10 text-center">
               <p className="text-gray-400 text-sm mb-4">Book a discovery meeting with our team</p>
               <a
                 href="https://calendly.com/marka-works/discovery-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 bg-[#D4F157] text-[#1a3a3a] rounded-full font-bold hover:bg-[#E0F77D] transition-colors text-sm"
+                className="inline-block px-6 py-3 bg-[#E7B621] text-[#11211F] rounded-full font-bold hover:bg-[#E7B001] transition-colors text-sm"
               >
                 Book Now
               </a>
@@ -102,7 +102,7 @@ export default function Footer() {
               <a
                 key={index}
                 href={post.href}
-                className="text-gray-300 hover:text-[#D4F157] transition-colors font-semibold text-sm leading-relaxed"
+                className="text-gray-300 hover:text-[#E7B621] transition-colors font-semibold text-sm leading-relaxed"
               >
                 {post.title}
               </a>
@@ -118,19 +118,19 @@ export default function Footer() {
             <div className="flex items-center gap-8">
               <h3 className="font-poppins font-bold text-lg text-white">Bambu</h3>
               <nav className="flex gap-6">
-                <Link to="/about-us" className="text-sm text-gray-400 hover:text-[#D4F157] transition-colors">
+                <Link to="/about-us" className="text-sm text-gray-400 hover:text-[#E7B621] transition-colors">
                   About us
                 </Link>
-                <Link to="/projects" className="text-sm text-gray-400 hover:text-[#D4F157] transition-colors">
+                <Link to="/projects" className="text-sm text-gray-400 hover:text-[#E7B621] transition-colors">
                   Projects
                 </Link>
-                <Link to="/services" className="text-sm text-gray-400 hover:text-[#D4F157] transition-colors">
+                <Link to="/services" className="text-sm text-gray-400 hover:text-[#E7B621] transition-colors">
                   Services
                 </Link>
-                <Link to="#" className="text-sm text-gray-400 hover:text-[#D4F157] transition-colors">
+                <Link to="#" className="text-sm text-gray-400 hover:text-[#E7B621] transition-colors">
                   Blog
                 </Link>
-                <Link to="/contact" className="text-sm text-gray-400 hover:text-[#D4F157] transition-colors">
+                <Link to="/contact" className="text-sm text-gray-400 hover:text-[#E7B621] transition-colors">
                   Contact
                 </Link>
               </nav>
@@ -142,7 +142,7 @@ export default function Footer() {
                 href="https://www.instagram.com/thebambuagency/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#D4F157] transition-colors"
+                className="text-gray-400 hover:text-[#E7B621] transition-colors"
                 aria-label="Instagram"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/thebambuagency/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#D4F157] transition-colors"
+                className="text-gray-400 hover:text-[#E7B621] transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,13 +177,13 @@ export default function Footer() {
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm text-gray-400">
             <p className="mb-4">© {currentYear} Bambu. All rights reserved.</p>
             <div className="flex gap-6 justify-center">
-              <Link to="#" className="hover:text-[#D4F157] transition-colors">
+              <Link to="#" className="hover:text-[#E7B621] transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="#" className="hover:text-[#D4F157] transition-colors">
+              <Link to="#" className="hover:text-[#E7B621] transition-colors">
                 Terms of Service
               </Link>
-              <Link to="#" className="hover:text-[#D4F157] transition-colors">
+              <Link to="#" className="hover:text-[#E7B621] transition-colors">
                 Cookies
               </Link>
             </div>

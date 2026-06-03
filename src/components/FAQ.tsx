@@ -11,7 +11,7 @@ interface FAQItem {
 function FAQAccordion({ item, isOpen, onClick }: { item: FAQItem; isOpen: boolean; onClick: () => void }) {
   return (
     <div
-      className="border border-gray-200 rounded-lg overflow-hidden hover:border-[#D4F157] transition-all duration-300 cursor-pointer bg-white"
+      className="border border-gray-200 rounded-lg overflow-hidden hover:border-[#E7B621] transition-all duration-300 cursor-pointer bg-white"
       onClick={onClick}
     >
       <div className="p-6 flex items-center justify-between">
@@ -19,7 +19,7 @@ function FAQAccordion({ item, isOpen, onClick }: { item: FAQItem; isOpen: boolea
           {item.question}
         </h3>
         <div
-          className={`text-[#D4F157] text-2xl transition-transform duration-300 flex-shrink-0 ${
+          className={`text-[#E7B621] text-2xl transition-transform duration-300 flex-shrink-0 ${
             isOpen ? 'rotate-45' : ''
           }`}
         >
@@ -87,8 +87,8 @@ export default function FAQ() {
       {/* Decorative rotating SVG elements */}
       <div className="absolute top-0 left-12 w-40 h-40 opacity-15 pointer-events-none" style={{ animation: 'spin 20s linear infinite' }}>
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#D4F157" strokeWidth="2" />
-          <path d="M100 30 L120 70 L100 100 L80 70 Z" fill="#D4F157" opacity="0.5" />
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#E7B621" strokeWidth="2" />
+          <path d="M100 30 L120 70 L100 100 L80 70 Z" fill="#E7B621" opacity="0.5" />
           <circle cx="100" cy="100" r="50" fill="none" stroke="#1a3a3a" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
@@ -96,14 +96,14 @@ export default function FAQ() {
       <div className="absolute bottom-20 right-12 w-48 h-48 opacity-10 pointer-events-none" style={{ animation: 'spin 25s linear infinite reverse' }}>
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <circle cx="100" cy="100" r="90" fill="none" stroke="#1a3a3a" strokeWidth="2" />
-          <polygon points="100,20 150,100 100,180 50,100" fill="#D4F157" opacity="0.4" />
-          <circle cx="100" cy="100" r="60" fill="none" stroke="#D4F157" strokeWidth="1" opacity="0.3" />
+          <polygon points="100,20 150,100 100,180 50,100" fill="#E7B621" opacity="0.4" />
+          <circle cx="100" cy="100" r="60" fill="none" stroke="#E7B621" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
 
       <div className="container-max max-w-4xl relative z-10">
         <h2 className="heading-lg mb-16 text-center text-[#1a3a3a]">
-          Frequently Asked <span className="text-[#D4F157]">Questions</span>
+          Frequently Asked <span className="text-[#E7B621]">Questions</span>
         </h2>
 
         <div className="space-y-4">
@@ -119,12 +119,12 @@ export default function FAQ() {
         </div>
 
         {/* Contact CTA */}
-        {/* <div className="mt-16 text-center p-8 bg-white rounded-xl border border-[#D4F157]">
+        {/* <div className="mt-16 text-center p-8 bg-white rounded-xl border border-[#E7B621]">
           <h3 className="heading-md mb-4 text-[#1a3a3a]">Still have questions?</h3>
           <p className="text-gray-700 mb-6">
             Our team is ready to discuss your branding needs and answer any questions you might have.
           </p>
-          <a href="/contact-us/" className="inline-block px-8 py-3 bg-[#D4F157] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-colors">
+          <a href="/contact-us/" className="inline-block px-8 py-3 bg-[#E7B621] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-colors">
             Schedule a Consultation
           </a>
         </div> */}

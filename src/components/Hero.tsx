@@ -78,17 +78,17 @@ export default function Hero() {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="mb-8">
               <p className="text-2xl md:text-3xl font-poppins font-semibold text-white mb-6 h-12">
-                <span className="text-[#D4F157]">{languages[currentLanguage]}</span>
+                <span className="text-[#E7B621]">{languages[currentLanguage]}</span>
               </p>
             </div>
 
             <h1 className="heading-lg leading-tight mb-6">
               <span className="text-white">First </span>
-              <span className="text-blue-400">impression</span>
+              <span className="text-[#E7B621]">impression</span>
               <span className="text-white"> wins.</span>
               <br />
               <span className="text-white">We build what </span>
-              <span className="text-purple-400">memory</span>
+              <span className="text-[#E7B621]">memory</span>
               <span className="text-white"> pins.</span>
             </h1>
           </div>
@@ -99,7 +99,7 @@ export default function Hero() {
             </p>
             <a
               href="#contact"
-              className="inline-block px-8 py-3 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105"
+              className="inline-block px-8 py-3 bg-[#E7B621] text-[#11211F] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105"
             >
               Let&apos;s build yours
             </a>
@@ -108,7 +108,7 @@ export default function Hero() {
 
         {/* Portfolio Gallery Section */}
         <div className="markaworks-portfolio-gallery-wrapper relative w-full h-96" ref={sectionRef}>
-          <div className="markaworks-gallery-nav markaworks-gallery-nav-left absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#D4F157] text-[#1a3a3a] flex items-center justify-center">
+          <div className="markaworks-gallery-nav markaworks-gallery-nav-left absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#11211F] flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -146,7 +146,7 @@ export default function Hero() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative">
                       {/* Saturn Ring */}
-                      <div className="absolute inset-0 rounded-full border-2 border-[#D4F157] opacity-0 group-hover:opacity-100 transition-all duration-300"
+                      <div className="absolute inset-0 rounded-full border-2 border-[#E7B621] opacity-0 group-hover:opacity-100 transition-all duration-300"
                         style={{
                           width: '120px',
                           height: '120px',
@@ -157,7 +157,7 @@ export default function Hero() {
                       ></div>
                       {/* Button */}
                       <button
-                        className="relative w-24 h-24 rounded-full bg-[#D4F157] text-[#1a3a3a] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
+                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#1a3a3a] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
                         style={{
                           boxShadow: '0 0 20px rgba(212, 241, 87, 0.3)',
                         }}
@@ -193,7 +193,7 @@ export default function Hero() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative">
                       {/* Saturn Ring */}
-                      <div className="absolute inset-0 rounded-full border-2 border-[#D4F157] opacity-0 group-hover:opacity-100 transition-all duration-300"
+                      <div className="absolute inset-0 rounded-full border-2 border-[#E7B621] opacity-0 group-hover:opacity-100 transition-all duration-300"
                         style={{
                           width: '120px',
                           height: '120px',
@@ -204,7 +204,7 @@ export default function Hero() {
                       ></div>
                       {/* Button */}
                       <button
-                        className="relative w-24 h-24 rounded-full bg-[#D4F157] text-[#1a3a3a] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
+                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#11211F] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
                         style={{
                           boxShadow: '0 0 20px rgba(212, 241, 87, 0.3)',
                         }}
@@ -218,7 +218,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="markaworks-gallery-nav markaworks-gallery-nav-right absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#D4F157] text-[#1a3a3a] flex items-center justify-center">
+          <div className="markaworks-gallery-nav markaworks-gallery-nav-right absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#11211F] flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

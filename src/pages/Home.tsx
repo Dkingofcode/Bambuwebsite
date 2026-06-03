@@ -16,7 +16,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-[#000]">
+    <main className="bg-[#325432]">
       <Navigation />
       <VideoHero />
       <Hero />

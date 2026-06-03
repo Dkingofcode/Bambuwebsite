@@ -25,7 +25,7 @@ export default function FinalCTA() {
                 {/* CTA Link with Arrow */}
                 <a
                   href="/contact-us/"
-                  className="inline-flex items-center gap-4 px-8 py-4 bg-[#D4F157] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-all duration-300 group"
+                  className="inline-flex items-center gap-4 px-8 py-4 bg-[#E7B621] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-all duration-300 group"
                 >
                   <span>Talk to an expert now</span>
                   <div className="group-hover:translate-x-2 transition-transform duration-300">
@@ -53,8 +53,8 @@ export default function FinalCTA() {
             </div>
 
             {/* Decorative Pattern */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4F157] rounded-full opacity-10 blur-3xl -z-10" />
-            <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#D4F157] rounded-full opacity-5 blur-3xl -z-10" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#E7B621] rounded-full opacity-10 blur-3xl -z-10" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#E7B621] rounded-full opacity-5 blur-3xl -z-10" />
           </div>
         </div>
       </div>

@@ -73,7 +73,7 @@ export default function VideoHero() {
       <div className="absolute bottom-20 left-10 z-30">
         <a
           href="#about"
-          className="inline-block px-8 py-3 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105"
+          className="inline-block px-8 py-3 bg-[#E7B621] text-[#11211F] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105"
         >
           Start a project
         </a>
@@ -82,7 +82,7 @@ export default function VideoHero() {
       {/* Scroll Indicator at Bottom */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 animate-bounce">
         <svg
-          className="w-8 h-8 text-[#D4F157]"
+          className="w-8 h-8 text-[#E7B621]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

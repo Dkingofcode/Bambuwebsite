@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
-            The Work That <span className="text-[#D4F157]">Moves the Business.</span>
+            The Work That <span className="text-[#E7B621]">Moves the Business.</span>
             <br />
             Not someday. Not softly. Now.
           </h1>
@@ -36,7 +36,7 @@ export default function ServicesPage() {
       <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
           <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
-            What We Do. What <span className="text-[#D4F157]">Moves Brands.</span>
+            What We Do. What <span className="text-[#E7B621]">Moves Brands.</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

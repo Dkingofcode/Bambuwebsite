@@ -103,8 +103,8 @@ export default function CreativeTeamCarousel() {
                       }}
                     >
                       {/* Avatar Placeholder */}
-                      <div className={`w-24 h-24 rounded-full bg-gradient-to-br from-[#D4F157] to-[#1a3a3a] flex items-center justify-center text-4xl shadow-lg ${
-                        isActive ? 'ring-4 ring-[#D4F157]' : ''
+                      <div className={`w-24 h-24 rounded-full bg-gradient-to-br from-[#E7B621] to-[#1a3a3a] flex items-center justify-center text-4xl shadow-lg ${
+                        isActive ? 'ring-4 ring-[#E7B621]' : ''
                       }`}>
                         {member.emoji}
                       </div>
@@ -134,7 +134,7 @@ export default function CreativeTeamCarousel() {
         <div className="flex gap-4 justify-center mt-12">
           <button
             onClick={handlePrev}
-            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#D4F157] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Previous team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -143,7 +143,7 @@ export default function CreativeTeamCarousel() {
           </button>
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#D4F157] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Next team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">

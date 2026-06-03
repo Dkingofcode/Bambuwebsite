@@ -42,7 +42,7 @@ export default function Methodology() {
           {methodologySteps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#D4F157] transition-all duration-300"
+              className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#E7B621] transition-all duration-300"
             >
               {/* Step Number */}
               <div className="text-6xl font-poppins font-bold text-[#1a3a3a] mb-6 opacity-20">

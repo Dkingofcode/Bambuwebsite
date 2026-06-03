@@ -14,7 +14,7 @@ function ServiceCard({ service }: { service: Service; index: number }) {
 
   return (
     <div
-      className="bg-[#11211F] border border-white/10 rounded-xl p-8 hover:border-[#D4F157] transition-all duration-300 cursor-pointer"
+      className="bg-[#11211F] border border-white/10 rounded-xl p-8 hover:border-[#E7B621] transition-all duration-300 cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="text-4xl mb-4">{service.icon}</div>
@@ -31,7 +31,7 @@ function ServiceCard({ service }: { service: Service; index: number }) {
           <ul className="space-y-2">
             {service.items.map((item) => (
               <li key={item} className="flex items-start gap-3 text-[#b0b0b0]">
-                <span className="text-[#D4F157] mt-1">•</span>
+                <span className="text-[#E7B621] mt-1">•</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -39,7 +39,7 @@ function ServiceCard({ service }: { service: Service; index: number }) {
         </div>
       </div>
 
-      <div className="mt-4 text-[#D4F157] font-semibold text-sm">
+      <div className="mt-4 text-[#E7B621] font-semibold text-sm">
         {isExpanded ? 'Show Less' : 'Learn More'}
       </div>
     </div>
@@ -138,7 +138,7 @@ export default function Services() {
     <section id="services" className="section-spacing bg-[#325432]">
       <div className="container-max">
         <h2 className="heading-lg mb-12 text-center">
-          Our <span className="text-[#D4F157]">Services</span>
+          Our <span className="text-[#E7B621]">Services</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -148,19 +148,19 @@ export default function Services() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 bg-[#0f2a2a] border border-white/10 rounded-xl p-8">
+        <div className="mt-16 bg-[#11211F] border border-white/10 rounded-xl p-8">
           <h3 className="heading-md mb-4">Our Approach</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <p className="font-poppins font-semibold text-[#D4F157] mb-2">Strategy</p>
+              <p className="font-poppins font-semibold text-[#E7B621] mb-2">Strategy</p>
               <p className="text-[#b0b0b0]">We start with research and insights to build a solid foundation for your brand identity.</p>
             </div>
             <div>
-              <p className="font-poppins font-semibold text-[#D4F157] mb-2">Design</p>
+              <p className="font-poppins font-semibold text-[#E7B621] mb-2">Design</p>
               <p className="text-[#b0b0b0]">Our creative team brings your vision to life with stunning visuals and cohesive brand elements.</p>
             </div>
             <div>
-              <p className="font-poppins font-semibold text-[#D4F157] mb-2">Delivery</p>
+              <p className="font-poppins font-semibold text-[#E7B621] mb-2">Delivery</p>
               <p className="text-[#b0b0b0]">We provide comprehensive documentation and support for seamless implementation across all channels.</p>
             </div>
           </div>

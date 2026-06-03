@@ -21,7 +21,7 @@ export default function CTASection() {
           </h2>
           <a
             href="#contact"
-            className="inline-block px-10 py-4 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105 text-lg"
+            className="inline-block px-10 py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Start a project
           </a>

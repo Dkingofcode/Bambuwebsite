@@ -39,7 +39,7 @@ export default function ContactsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h1 className="text-5xl md:text-7xl font-poppins font-bold text-white mb-8">
-                International <span className="text-[#D4F157]">Branding</span> Agency. All Branches.
+                International <span className="text-[#E7B621]">Branding</span> Agency. All Branches.
               </h1>
             </div>
             <div className="flex justify-center">
@@ -72,7 +72,7 @@ export default function ContactsPage() {
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Book a consultation with our international branding agency team. Pick a time that works for you and meet us online. Use the Calendly widget below to book your spot.
               </p>
-              <div className="bg-[#D4F157] rounded-2xl p-8 text-center">
+              <div className="bg-[#E7B621] rounded-2xl p-8 text-center">
                 <p className="font-poppins font-bold text-[#1a3a3a] text-2xl mb-4">Select a Day</p>
                 <div className="text-sm text-gray-700">
                   <div className="flex justify-between mb-4">
@@ -106,7 +106,7 @@ export default function ContactsPage() {
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Name"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#D4F157]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export default function ContactsPage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Email"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#D4F157]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
               </form>
@@ -133,7 +133,7 @@ export default function ContactsPage() {
             {/* Calendar & Timezone */}
             {/* <div>
               <p className="text-lg font-bold text-[#1a3a3a] mb-4">Time zone</p>
-              <div className="bg-[#D4F157] rounded-2xl p-6 mb-8">
+              <div className="bg-[#E7B621] rounded-2xl p-6 mb-8">
                 <div className="flex items-center gap-2 text-[#1a3a3a] font-bold text-lg">
                   <span>🌍</span>
                   <span>Pacific Time - US & Canada (10:21)</span>
@@ -160,7 +160,7 @@ export default function ContactsPage() {
                   value={formData.projectDetails}
                   onChange={handleInputChange}
                   placeholder="What&apos;s the objective? Who&apos;s the audience? Dish out the details here..."
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#D4F157] h-40 resize-none"
+                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621] h-40 resize-none"
                 />
               </div>
 
@@ -170,7 +170,7 @@ export default function ContactsPage() {
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] focus:outline-none focus:border-[#D4F157]"
+                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] focus:outline-none focus:border-[#E7B621]"
                 >
                   <option value="">Select</option>
                   <option value="5k-10k">$5,000 - $10,000</option>
@@ -189,7 +189,7 @@ export default function ContactsPage() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="w-full py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Send project request
               </button>
@@ -239,7 +239,7 @@ export default function ContactsPage() {
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="John Doe"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
@@ -256,7 +256,7 @@ export default function ContactsPage() {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="you@example.com"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
@@ -271,7 +271,7 @@ export default function ContactsPage() {
                 name="budget"
                 value={formData.budget}
                 onChange={handleInputChange}
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               >
                 <option value="">Select your budget</option>
                 <option value="5k-10k">$5,000 - $10,000</option>
@@ -282,7 +282,7 @@ export default function ContactsPage() {
             </div>
 
             {/* Timezone Box 
-            <div className="bg-[#D4F157] rounded-2xl p-6">
+            <div className="bg-[#E7B621] rounded-2xl p-6">
               <p className="text-[#1a3a3a] font-bold text-lg mb-2">
                 🌍 International Team
               </p>
@@ -308,7 +308,7 @@ export default function ContactsPage() {
                 value={formData.projectDetails}
                 onChange={handleInputChange}
                 placeholder="Describe your project goals, target audience, brand vision, timelines, challenges, and anything else you'd like us to know..."
-                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#D4F157] transition-all"
+                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
@@ -371,12 +371,12 @@ export default function ContactsPage() {
               <h2 className="text-4xl md:text-5xl font-poppins font-bold text-white mb-3">
                 Interested in working
               </h2>
-              <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#D4F157] mb-8">
+              <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#E7B621] mb-8">
                 together?
               </h2>
               <a
                 href="#"
-                className="inline-block px-10 py-4 bg-[#D4F157] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="inline-block px-10 py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Join the Team
               </a>

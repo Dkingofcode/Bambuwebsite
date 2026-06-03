@@ -14,10 +14,10 @@ export default function PortfolioGalleryCarousel() {
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const portfolioItems: PortfolioItem[] = [
-    { id: 1, title: 'Brand Identity', category: 'Branding', image: 'linear-gradient(135deg, #D4F157, #1a3a3a)' },
-    { id: 2, title: 'Packaging Design', category: 'Product', image: 'linear-gradient(135deg, #1a3a3a, #D4F157)' },
+    { id: 1, title: 'Brand Identity', category: 'Branding', image: 'linear-gradient(135deg, #E7B621, #1a3a3a)' },
+    { id: 2, title: 'Packaging Design', category: 'Product', image: 'linear-gradient(135deg, #1a3a3a, #E7B621)' },
     { id: 3, title: 'Web Design', category: 'Digital', image: 'linear-gradient(135deg, #ededda, #1a3a3a)' },
-    { id: 4, title: 'Campaign Assets', category: 'Marketing', image: 'linear-gradient(135deg, #D4F157, #ededda)' },
+    { id: 4, title: 'Campaign Assets', category: 'Marketing', image: 'linear-gradient(135deg, #E7B621, #ededda)' },
     { id: 5, title: 'Visual System', category: 'Branding', image: 'linear-gradient(135deg, #1a3a3a, #ededda)' },
   ];
 
@@ -70,7 +70,7 @@ export default function PortfolioGalleryCarousel() {
                 }}
                 className={`flex-shrink-0 w-20 h-20 rounded-lg transition-all duration-300 border-2 ${
                   index === currentIndex
-                    ? 'border-[#D4F157] scale-105'
+                    ? 'border-[#E7B621] scale-105'
                     : 'border-transparent hover:border-gray-400'
                 }`}
                 style={{
@@ -116,7 +116,7 @@ export default function PortfolioGalleryCarousel() {
               onClick={() => setIsAutoPlay(!isAutoPlay)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                 isAutoPlay
-                  ? 'bg-[#D4F157] text-[#1a3a3a] hover:bg-[#E0F77D]'
+                  ? 'bg-[#E7B621] text-[#1a3a3a] hover:bg-[#E0F77D]'
                   : 'bg-gray-300 text-[#1a3a3a] hover:bg-gray-400'
               }`}
             >

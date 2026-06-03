@@ -54,11 +54,11 @@ export default function PortfolioShowcase() {
         <div className="mb-12">
           <h2 className="heading-lg leading-tight mb-8">
             <span className="text-white">We build brands that stick </span>
-            <span className="text-blue-400">strategically,</span>
+            <span className="text-[#E7B621]">strategically,</span>
             <span className="text-white"> </span>
-            <span className="text-[#D4F157]">visually,</span>
+            <span className="text-[#E7B621]">visually,</span>
             <span className="text-white"> </span>
-            <span className="text-purple-400">emotionally.</span>
+            <span className="text-[#E7B621]">emotionally.</span>
           </h2>
 
           {/* Controls */}
@@ -90,7 +90,7 @@ export default function PortfolioShowcase() {
                           setIsDropdownOpen(false);
                         }}
                         className={`w-full px-6 py-3 text-left flex justify-between items-center hover:bg-white/10 transition-all ${
-                          activeCategory === category.value ? 'bg-[#D4F157] text-[#1a3a3a]' : 'text-white'
+                          activeCategory === category.value ? 'bg-[#E7B621] text-[#1a3a3a]' : 'text-white'
                         }`}
                       >
                         <span className="font-medium">{category.name}</span>
@@ -109,7 +109,7 @@ export default function PortfolioShowcase() {
                 placeholder="Search projects by name, industry, or keyword"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full md:w-80 px-4 py-2 bg-[#0f2a2a] border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#D4F157] transition-all"
+                className="w-full md:w-80 px-4 py-2 bg-[#0f2a2a] border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#E7B621] transition-all"
               />
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute right-3 top-2.5 text-white/50">
                 <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.8" />

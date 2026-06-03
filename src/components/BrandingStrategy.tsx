@@ -128,7 +128,7 @@ export default function BrandingStrategy() {
               <h2 className="heading-lg mb-4 text-[#1a3a3a]">
                 {category.title}
               </h2>
-              <div className="h-1 w-20 bg-[#D4F157] rounded-full" />
+              <div className="h-1 w-20 bg-[#E7B621] rounded-full" />
             </div>
 
             {/* Services List */}
@@ -136,7 +136,7 @@ export default function BrandingStrategy() {
               {category.services.map((service, idx) => (
                 <div
                   key={idx}
-                  className="border-l-4 border-[#D4F157] pl-6 py-2 hover:pl-8 transition-all duration-300"
+                  className="border-l-4 border-[#E7B621] pl-6 py-2 hover:pl-8 transition-all duration-300"
                 >
                   <h3 className="text-lg font-poppins font-bold text-[#1a3a3a] mb-2">
                     {service.name}
@@ -152,7 +152,7 @@ export default function BrandingStrategy() {
             <div className="flex gap-4 pt-8">
               <button
                 onClick={() => setCurrentIndex((prev) => (prev - 1 + serviceCategories.length) % serviceCategories.length)}
-                className="w-12 h-12 rounded-full border-2 border-[#D4F157] text-[#1a3a3a] flex items-center justify-center hover:bg-[#D4F157] transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
                 aria-label="Previous category"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -161,7 +161,7 @@ export default function BrandingStrategy() {
               </button>
               <button
                 onClick={() => setCurrentIndex((prev) => (prev + 1) % serviceCategories.length)}
-                className="w-12 h-12 rounded-full border-2 border-[#D4F157] text-[#1a3a3a] flex items-center justify-center hover:bg-[#D4F157] transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
                 aria-label="Next category"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
