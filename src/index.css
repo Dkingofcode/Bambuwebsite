@@ -14,7 +14,7 @@
 
 
 :root {
-  --background: #325432;
+  --background: #ef0a0a;
   --foreground: #ffffff;
   --accent: #E7B621;
   --muted: #b0b0b0;
@@ -38,7 +38,7 @@
   }
   
   body {
-    @apply bg-[#325432] text-white;
+    @apply bg-[#ef0a0a] text-white;
   }
 }
 
@@ -64,7 +64,7 @@
   }
   
   .btn-primary {
-    @apply px-8 py-3 bg-[#E7B621] text-[#325432] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105;
+    @apply px-8 py-3 bg-[#E7B621] text-[#325432] font-poppins font-bold rounded-full hover:bg-[#E7B001] transition-all duration-300 transform hover:scale-105;
   }
   
   .btn-outline {
