@@ -29,7 +29,7 @@ export default function Methodology() {
       <div className="container-max">
         {/* Header */}
         <div className="mb-16">
-          <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#1a3a3a] mb-6 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#325432] mb-6 leading-tight">
             From Idea to Impact. Together.
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl">
@@ -45,12 +45,12 @@ export default function Methodology() {
               className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#E7B621] transition-all duration-300"
             >
               {/* Step Number */}
-              <div className="text-6xl font-poppins font-bold text-[#1a3a3a] mb-6 opacity-20">
+              <div className="text-6xl font-poppins font-bold text-[#325432] mb-6 opacity-20">
                 {step.number}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-poppins font-bold text-[#1a3a3a] mb-4">
+              <h3 className="text-2xl font-poppins font-bold text-[#325432] mb-4">
                 {step.title}
               </h3>
 

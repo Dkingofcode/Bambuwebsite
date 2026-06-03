@@ -80,21 +80,21 @@ export default function Stats() {
         <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="60" cy="60" r="50" stroke="#E7B621" strokeWidth="2" opacity="0.5" />
           <path d="M60 10 L80 50 L50 70 L30 40 Z" fill="#E7B621" opacity="0.3" />
-          <circle cx="60" cy="60" r="30" stroke="#1a3a3a" strokeWidth="1" opacity="0.3" />
+          <circle cx="60" cy="60" r="30" stroke="#325432" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
 
       <div className="markaworks-floating-bg markaworks-floating-bg-2 absolute top-1/3 right-12 opacity-20 pointer-events-none" style={{ animation: 'float 8s ease-in-out infinite 1s' }}>
         <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="70" cy="70" r="60" stroke="#E7B621" strokeWidth="2" opacity="0.4" />
-          <path d="M70 20 L100 60 L70 100 L40 60 Z" fill="#1a3a3a" opacity="0.2" />
+          <path d="M70 20 L100 60 L70 100 L40 60 Z" fill="#325432" opacity="0.2" />
           <circle cx="70" cy="70" r="35" stroke="#E7B621" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
 
       <div className="markaworks-floating-bg markaworks-floating-bg-3 absolute bottom-20 left-1/4 opacity-20 pointer-events-none" style={{ animation: 'float 7s ease-in-out infinite 0.5s' }}>
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="45" stroke="#1a3a3a" strokeWidth="2" opacity="0.3" />
+          <circle cx="50" cy="50" r="45" stroke="#325432" strokeWidth="2" opacity="0.3" />
           <polygon points="50,15 85,75 15,75" fill="#E7B621" opacity="0.2" />
           <circle cx="50" cy="50" r="25" stroke="#E7B621" strokeWidth="1" opacity="0.4" />
         </svg>
@@ -103,8 +103,8 @@ export default function Stats() {
       <div className="markaworks-floating-bg markaworks-floating-bg-4 absolute bottom-1/3 right-1/3 opacity-15 pointer-events-none" style={{ animation: 'float 9s ease-in-out infinite 1.5s' }}>
         <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="80" cy="80" r="70" stroke="#E7B621" strokeWidth="2" opacity="0.3" />
-          <path d="M80 20 L130 80 L80 140 L30 80 Z" fill="#1a3a3a" opacity="0.15" />
-          <circle cx="80" cy="80" r="40" stroke="#1a3a3a" strokeWidth="1" opacity="0.25" />
+          <path d="M80 20 L130 80 L80 140 L30 80 Z" fill="#325432" opacity="0.15" />
+          <circle cx="80" cy="80" r="40" stroke="#325432" strokeWidth="1" opacity="0.25" />
         </svg>
       </div>
 

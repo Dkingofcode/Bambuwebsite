@@ -69,7 +69,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="section-spacing bg-[#1a3a3a]">
+    <section id="about" className="section-spacing bg-[#325432]">
       <div className="container-max">
         {/* Section Title */}
         <div className="mb-16">

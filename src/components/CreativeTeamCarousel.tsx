@@ -79,7 +79,7 @@ export default function CreativeTeamCarousel() {
     <section className="bg-[#D9DECC] py-20 md:py-28">
       <div className="container-max">
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#1a3a3a] mb-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#325432] mb-16 text-center">
           Our Creative Brand Consultancy Team Making It All Happen
         </h2>
 
@@ -103,12 +103,12 @@ export default function CreativeTeamCarousel() {
                       }}
                     >
                       {/* Avatar Placeholder */}
-                      <div className={`w-24 h-24 rounded-full bg-gradient-to-br from-[#E7B621] to-[#1a3a3a] flex items-center justify-center text-4xl shadow-lg ${
+                      <div className={`w-24 h-24 rounded-full bg-gradient-to-br from-[#E7B621] to-[#325432] flex items-center justify-center text-4xl shadow-lg ${
                         isActive ? 'ring-4 ring-[#E7B621]' : ''
                       }`}>
                         {member.emoji}
                       </div>
-                      <p className="text-sm font-bold text-[#1a3a3a] text-center">{member.name}</p>
+                      <p className="text-sm font-bold text-[#325432] text-center">{member.name}</p>
                     </div>
                   );
                 })}
@@ -117,9 +117,9 @@ export default function CreativeTeamCarousel() {
           </div>
 
           {/* Active Member Card */}
-          <div className="bg-white rounded-3xl p-8 border-2 border-[#1a3a3a] h-full flex flex-col justify-center">
+          <div className="bg-white rounded-3xl p-8 border-2 border-[#325432] h-full flex flex-col justify-center">
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-poppins font-bold text-[#1a3a3a] mb-2">
+              <h3 className="text-2xl font-poppins font-bold text-[#325432] mb-2">
                 {current.name.toUpperCase()}
               </h3>
               <p className="text-gray-600 font-semibold mb-6">{current.role}</p>
@@ -134,7 +134,7 @@ export default function CreativeTeamCarousel() {
         <div className="flex gap-4 justify-center mt-12">
           <button
             onClick={handlePrev}
-            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Previous team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -143,7 +143,7 @@ export default function CreativeTeamCarousel() {
           </button>
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full border-2 border-[#1a3a3a] text-[#1a3a3a] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Next team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">

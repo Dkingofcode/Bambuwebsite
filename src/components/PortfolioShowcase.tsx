@@ -64,7 +64,7 @@ export default function PortfolioShowcase() {
           {/* Controls */}
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             <div className="flex gap-4 items-center">
-              <a href="/projects/" className="px-6 py-2 bg-white text-[#1a3a3a] font-poppins font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
+              <a href="/projects/" className="px-6 py-2 bg-white text-[#325432] font-poppins font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
                 View all
               </a>
 
@@ -90,7 +90,7 @@ export default function PortfolioShowcase() {
                           setIsDropdownOpen(false);
                         }}
                         className={`w-full px-6 py-3 text-left flex justify-between items-center hover:bg-white/10 transition-all ${
-                          activeCategory === category.value ? 'bg-[#E7B621] text-[#1a3a3a]' : 'text-white'
+                          activeCategory === category.value ? 'bg-[#E7B621] text-[#325432]' : 'text-white'
                         }`}
                       >
                         <span className="font-medium">{category.name}</span>

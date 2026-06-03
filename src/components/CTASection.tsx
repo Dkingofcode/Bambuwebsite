@@ -16,12 +16,12 @@ export default function CTASection() {
           <div className="mb-6">
             <p className="text-lg md:text-xl text-gray-700 font-poppins">Need a better branding?</p>
           </div>
-          <h2 className="heading-lg mb-12 text-[#1a3a3a]">
+          <h2 className="heading-lg mb-12 text-[#325432]">
             Start a project today
           </h2>
           <a
             href="#contact"
-            className="inline-block px-10 py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105 text-lg"
+            className="inline-block px-10 py-4 bg-[#E7B621] text-[#325432] font-poppins font-bold rounded-full hover:bg-[#E0F77D] transition-all duration-300 transform hover:scale-105 text-lg"
           >
             Start a project
           </a>

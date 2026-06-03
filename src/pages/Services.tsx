@@ -18,12 +18,12 @@ export default function ServicesPage() {
       {/* Heading & Text One */}
       <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
-          <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
+          <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#325432] mb-8 text-balance">
             The Work That <span className="text-[#E7B621]">Moves the Business.</span>
             <br />
             Not someday. Not softly. Now.
           </h1>
-          <p className="text-lg leading-relaxed text-[#1a3a3a] max-w-4xl">
+          <p className="text-lg leading-relaxed text-[#325432] max-w-4xl">
             As an international branding and web design agency, we don&apos;t sell creativity we use it. Our brand design agency services close gaps, gain ground, and push brands where they need to go. Faster. Sharper. Without detours. Serving clients globally with offices in London, Dubai, and Istanbul.
           </p>
         </div>
@@ -35,12 +35,12 @@ export default function ServicesPage() {
       {/* Heading & Text Two */}
       <section className="bg-[#D9DECC] py-20 md:py-28">
         <div className="container-max">
-          <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#1a3a3a] mb-8 text-balance">
+          <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#325432] mb-8 text-balance">
             What We Do. What <span className="text-[#E7B621]">Moves Brands.</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-lg leading-relaxed text-[#1a3a3a]">
+              <p className="text-lg leading-relaxed text-[#325432]">
                 Bambu is an international brand design agency delivering creative assets designed to perform. If, on screen, in pitch rooms, and in people&apos;s hands, our brand agency services span global markets with presence in London, Dubai, and Istanbul. No fluff. No filler. Just what moves.
            We are a creative agency driven by one core belief: great brands aren’t made, they’re built. Our purpose is simple yet powerful, to build brands that are structured, intentional, and built to last.
 

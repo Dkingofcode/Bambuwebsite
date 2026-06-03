@@ -43,7 +43,7 @@ export default function Partners() {
   return (
     <section className="bg-[#D9DECC] py-20 md:py-28" ref={sectionRef}>
       <div className="container-max">
-        <h3 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a] mb-12 text-center">
+        <h3 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432] mb-12 text-center">
           Tech We Build With
         </h3>
 

@@ -157,7 +157,7 @@ export default function Hero() {
                       ></div>
                       {/* Button */}
                       <button
-                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#1a3a3a] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
+                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#325432] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
                         style={{
                           boxShadow: '0 0 20px rgba(212, 241, 87, 0.3)',
                         }}

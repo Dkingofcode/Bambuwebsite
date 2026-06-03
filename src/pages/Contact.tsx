@@ -34,7 +34,7 @@ export default function ContactsPage() {
       <Navigation />
 
       {/* Section 1: Hero with Locations */}
-      {/* <section className="bg-[#1a3a3a] py-20 md:py-28">
+      {/* <section className="bg-[#325432] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
@@ -66,14 +66,14 @@ export default function ContactsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Option 1: Calendly */}
             {/* <div>
-              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a] mb-6">
+              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432] mb-6">
                 Option 1. Online Meeting with Our Team
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Book a consultation with our international branding agency team. Pick a time that works for you and meet us online. Use the Calendly widget below to book your spot.
               </p>
               <div className="bg-[#E7B621] rounded-2xl p-8 text-center">
-                <p className="font-poppins font-bold text-[#1a3a3a] text-2xl mb-4">Select a Day</p>
+                <p className="font-poppins font-bold text-[#325432] text-2xl mb-4">Select a Day</p>
                 <div className="text-sm text-gray-700">
                   <div className="flex justify-between mb-4">
                     <span>&lt;</span>
@@ -91,7 +91,7 @@ export default function ContactsPage() {
 
             {/* Option 2: Contact Form Start */}
             {/* <div>
-              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a] mb-6">
+              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432] mb-6">
                 Option 2. Contact Our Branding Agency
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -99,25 +99,25 @@ export default function ContactsPage() {
               </p>
               <form className="space-y-6">
                 <div>
-                  <label className="block text-lg font-bold text-[#1a3a3a] mb-3">What&apos;s your name?</label>
+                  <label className="block text-lg font-bold text-[#325432] mb-3">What&apos;s your name?</label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Name"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
                 <div>
-                  <label className="block text-lg font-bold text-[#1a3a3a] mb-3">What&apos;s your email?</label>
+                  <label className="block text-lg font-bold text-[#325432] mb-3">What&apos;s your email?</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Email"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
               </form>
@@ -132,9 +132,9 @@ export default function ContactsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Calendar & Timezone */}
             {/* <div>
-              <p className="text-lg font-bold text-[#1a3a3a] mb-4">Time zone</p>
+              <p className="text-lg font-bold text-[#325432] mb-4">Time zone</p>
               <div className="bg-[#E7B621] rounded-2xl p-6 mb-8">
-                <div className="flex items-center gap-2 text-[#1a3a3a] font-bold text-lg">
+                <div className="flex items-center gap-2 text-[#325432] font-bold text-lg">
                   <span>🌍</span>
                   <span>Pacific Time - US & Canada (10:21)</span>
                 </div>
@@ -152,7 +152,7 @@ export default function ContactsPage() {
  
  {/*            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-lg font-bold text-[#1a3a3a] mb-3">
+                <label className="block text-lg font-bold text-[#325432] mb-3">
                   Please tell us a bit more about your project
                 </label>
                 <textarea
@@ -160,17 +160,17 @@ export default function ContactsPage() {
                   value={formData.projectDetails}
                   onChange={handleInputChange}
                   placeholder="What&apos;s the objective? Who&apos;s the audience? Dish out the details here..."
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:border-[#E7B621] h-40 resize-none"
+                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621] h-40 resize-none"
                 />
               </div>
 
               <div>
-                <label className="block text-lg font-bold text-[#1a3a3a] mb-3">What is your budget range?</label>
+                <label className="block text-lg font-bold text-[#325432] mb-3">What is your budget range?</label>
                 <select
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#1a3a3a] focus:outline-none focus:border-[#E7B621]"
+                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] focus:outline-none focus:border-[#E7B621]"
                 >
                   <option value="">Select</option>
                   <option value="5k-10k">$5,000 - $10,000</option>
@@ -189,7 +189,7 @@ export default function ContactsPage() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="w-full py-4 bg-[#E7B621] text-[#325432] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Send project request
               </button>
@@ -206,7 +206,7 @@ export default function ContactsPage() {
 
       {/* Heading 
       <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#1a3a3a] mb-6">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#325432] mb-6">
           Let&apos;s Build Something Exceptional
         </h2>
 
@@ -228,7 +228,7 @@ export default function ContactsPage() {
 
             {/* Name 
             <div>
-              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+              <label className="block text-lg font-semibold text-[#325432] mb-3">
                 Your Name
               </label>
 
@@ -239,13 +239,13 @@ export default function ContactsPage() {
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="John Doe"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
             {/* Email 
             <div>
-              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+              <label className="block text-lg font-semibold text-[#325432] mb-3">
                 Your Email
               </label>
 
@@ -256,13 +256,13 @@ export default function ContactsPage() {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="you@example.com"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
             {/* Budget 
             <div>
-              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+              <label className="block text-lg font-semibold text-[#325432] mb-3">
                 Budget Range
               </label>
 
@@ -271,7 +271,7 @@ export default function ContactsPage() {
                 name="budget"
                 value={formData.budget}
                 onChange={handleInputChange}
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               >
                 <option value="">Select your budget</option>
                 <option value="5k-10k">$5,000 - $10,000</option>
@@ -283,11 +283,11 @@ export default function ContactsPage() {
 
             {/* Timezone Box 
             <div className="bg-[#E7B621] rounded-2xl p-6">
-              <p className="text-[#1a3a3a] font-bold text-lg mb-2">
+              <p className="text-[#325432] font-bold text-lg mb-2">
                 🌍 International Team
               </p>
 
-              <p className="text-[#1a3a3a]/80 leading-relaxed">
+              <p className="text-[#325432]/80 leading-relaxed">
                 We work with brands globally across London, Dubai, and Istanbul.
               </p>
             </div>
@@ -298,7 +298,7 @@ export default function ContactsPage() {
 
             {/* Project Details 
             <div className="flex-1">
-              <label className="block text-lg font-semibold text-[#1a3a3a] mb-3">
+              <label className="block text-lg font-semibold text-[#325432] mb-3">
                 Tell Us About Your Project
               </label>
 
@@ -308,7 +308,7 @@ export default function ContactsPage() {
                 value={formData.projectDetails}
                 onChange={handleInputChange}
                 placeholder="Describe your project goals, target audience, brand vision, timelines, challenges, and anything else you'd like us to know..."
-                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#1a3a3a] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
@@ -332,7 +332,7 @@ export default function ContactsPage() {
             {/* Submit 
             <button
               type="submit"
-              className="mt-8 w-full py-5 bg-[#1a3a3a] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
+              className="mt-8 w-full py-5 bg-[#325432] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
             >
               Send Project Request
             </button>
@@ -376,7 +376,7 @@ export default function ContactsPage() {
               </h2>
               <a
                 href="#"
-                className="inline-block px-10 py-4 bg-[#E7B621] text-[#1a3a3a] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="inline-block px-10 py-4 bg-[#E7B621] text-[#325432] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Join the Team
               </a>

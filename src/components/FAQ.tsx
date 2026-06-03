@@ -15,7 +15,7 @@ function FAQAccordion({ item, isOpen, onClick }: { item: FAQItem; isOpen: boolea
       onClick={onClick}
     >
       <div className="p-6 flex items-center justify-between">
-        <h3 className="text-lg font-poppins font-bold text-[#1a3a3a] pr-4">
+        <h3 className="text-lg font-poppins font-bold text-[#325432] pr-4">
           {item.question}
         </h3>
         <div
@@ -89,20 +89,20 @@ export default function FAQ() {
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <circle cx="100" cy="100" r="80" fill="none" stroke="#E7B621" strokeWidth="2" />
           <path d="M100 30 L120 70 L100 100 L80 70 Z" fill="#E7B621" opacity="0.5" />
-          <circle cx="100" cy="100" r="50" fill="none" stroke="#1a3a3a" strokeWidth="1" opacity="0.3" />
+          <circle cx="100" cy="100" r="50" fill="none" stroke="#325432" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
 
       <div className="absolute bottom-20 right-12 w-48 h-48 opacity-10 pointer-events-none" style={{ animation: 'spin 25s linear infinite reverse' }}>
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="90" fill="none" stroke="#1a3a3a" strokeWidth="2" />
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#325432" strokeWidth="2" />
           <polygon points="100,20 150,100 100,180 50,100" fill="#E7B621" opacity="0.4" />
           <circle cx="100" cy="100" r="60" fill="none" stroke="#E7B621" strokeWidth="1" opacity="0.3" />
         </svg>
       </div>
 
       <div className="container-max max-w-4xl relative z-10">
-        <h2 className="heading-lg mb-16 text-center text-[#1a3a3a]">
+        <h2 className="heading-lg mb-16 text-center text-[#325432]">
           Frequently Asked <span className="text-[#E7B621]">Questions</span>
         </h2>
 
@@ -120,11 +120,11 @@ export default function FAQ() {
 
         {/* Contact CTA */}
         {/* <div className="mt-16 text-center p-8 bg-white rounded-xl border border-[#E7B621]">
-          <h3 className="heading-md mb-4 text-[#1a3a3a]">Still have questions?</h3>
+          <h3 className="heading-md mb-4 text-[#325432]">Still have questions?</h3>
           <p className="text-gray-700 mb-6">
             Our team is ready to discuss your branding needs and answer any questions you might have.
           </p>
-          <a href="/contact-us/" className="inline-block px-8 py-3 bg-[#E7B621] text-[#1a3a3a] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-colors">
+          <a href="/contact-us/" className="inline-block px-8 py-3 bg-[#E7B621] text-[#325432] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-colors">
             Schedule a Consultation
           </a>
         </div> */}

@@ -144,7 +144,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Testimonial Content */}
           <div className="space-y-8">
-            <h3 className="text-3xl md:text-4xl font-poppins font-bold text-[#1a3a3a]">
+            <h3 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432]">
               {current.title}
             </h3>
             
@@ -174,7 +174,7 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div>
-                <p className="font-poppins font-bold text-[#1a3a3a]">{current.author}</p>
+                <p className="font-poppins font-bold text-[#325432]">{current.author}</p>
                 <p className="text-gray-600 text-sm">{current.position}, {current.company}</p>
                 <p className="text-[#E7B621] text-xs mt-1">{current.website}</p>
               </div>
@@ -184,7 +184,7 @@ export default function Testimonials() {
             <div className="flex gap-4 pt-4">
               <button
                 onClick={handlePrev}
-                className="w-12 h-12 rounded-full border border-gray-300 text-[#1a3a3a] hover:border-[#E7B621] hover:text-[#E7B621] transition-all duration-300 flex items-center justify-center"
+                className="w-12 h-12 rounded-full border border-gray-300 text-[#325432] hover:border-[#E7B621] hover:text-[#E7B621] transition-all duration-300 flex items-center justify-center"
                 aria-label="Previous testimonial"
               >
                 <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
@@ -193,7 +193,7 @@ export default function Testimonials() {
               </button>
               <button
                 onClick={handleNext}
-                className="w-12 h-12 rounded-full border border-gray-300 text-[#1a3a3a] hover:border-[#E7B621] hover:text-[#E7B621] transition-all duration-300 flex items-center justify-center"
+                className="w-12 h-12 rounded-full border border-gray-300 text-[#325432] hover:border-[#E7B621] hover:text-[#E7B621] transition-all duration-300 flex items-center justify-center"
                 aria-label="Next testimonial"
               >
                 <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
