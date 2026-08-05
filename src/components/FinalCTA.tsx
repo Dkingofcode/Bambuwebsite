@@ -18,14 +18,14 @@ export default function FinalCTA() {
             <div className="bg-white rounded-2xl p-12 md:p-16 border border-gray-100 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-8">
-                <h2 className="heading-lg text-[#325432]">
+                <h2 className="heading-lg text-[#052F23]">
                   Let&apos;s make the work they&apos;ll copy.
                 </h2>
 
                 {/* CTA Link with Arrow */}
                 <a
                   href="/contact-us/"
-                  className="inline-flex items-center gap-4 px-8 py-4 bg-[#E7B621] text-[#325432] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-all duration-300 group"
+                  className="inline-flex items-center gap-4 px-8 py-4 bg-[#E7B621] text-[#052F23] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-all duration-300 group"
                 >
                   <span>Talk to an expert now</span>
                   <div className="group-hover:translate-x-2 transition-transform duration-300">

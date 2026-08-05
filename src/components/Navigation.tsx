@@ -3,11 +3,14 @@
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const location  = useLocation();
   const pathname = location.pathname;
+  const navigate = useNavigate();
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -18,12 +21,12 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-[#325432]/95 backdrop-blur-md z-50 border-b border-white/10">
+    <nav className="fixed top-0 w-full bg-[#052F23]/95 backdrop-blur-md z-50 border-b border-white/10">
       <div className="container-max flex items-center justify-between py-4">
         {/* Logo */}
         {/* <Link to="/" className="flex items-center gap-2">
         <img className='w-8 h-10' src='/ICON.png'  />
-          <div className="text-2xl font-poppins font-bold text-[#E7B621]">BAMBU</div>
+          <div className="text-2xl font-poppins font-bold text-[#D0D731]">BAMBU</div>
         </Link> */}
 
 
@@ -36,7 +39,7 @@ export default function Navigation() {
     />
   </div>
 
-  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+  <div className="text-2xl font-poppins font-bold text-[#E1E1D5]">
     BAMBU
   </div>
 </Link> 
@@ -54,7 +57,7 @@ export default function Navigation() {
     />
   </div>
 
-  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+  <div className="text-2xl font-poppins font-bold text-[#D0D731]">
     BAMBU
   </div>
 </Link> */}
@@ -85,7 +88,7 @@ export default function Navigation() {
     />
   </div>
 
-  <div className="text-2xl font-poppins font-bold text-[#E7B621]">
+  <div className="text-2xl font-poppins font-bold text-[#D0D731]">
     BAMBU
   </div>
 </Link> */}
@@ -100,17 +103,17 @@ export default function Navigation() {
                 key={link.name}
                 to={link.href}
                 className={`relative transition-colors duration-300 font-medium group ${
-                  active ? 'text-[#E7B621]' : 'text-white hover:text-[#E7B621]'
+                  active ? 'text-[#D0D731]' : 'text-[#E1E1D5] hover:text-[#D0D731]'
                 }`}
               >
                 {link.name}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#E7B621] transition-all duration-300 ${
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#D0D731] transition-all duration-300 ${
                   active ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}></span>
               </Link>
             );
           })}
-          <button className="btn-primary">Start a project</button>
+          <button onClick={() => navigate("/contacts")}  className="btn-primary bg-[#D0D731]">Start a project</button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -154,7 +157,7 @@ export default function Navigation() {
                   key={link.name}
                   to={link.href}
                   className={`transition-colors duration-300 ${
-                    active ? 'text-[#E7B621] font-bold' : 'text-white hover:text-[#E7B621]'
+                    active ? 'text-[#D0D731] font-bold' : 'text-[#E1E1D5] hover:text-[#D0D731]'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -162,7 +165,7 @@ export default function Navigation() {
                 </Link>
               );
             })}
-            <button className="btn-primary w-full">Start a project</button>
+            <button onClick={() => navigate("/contacts")}  className="btn-primary bg-[#D0D731] w-full">Start a project</button>
           </div>
         </div>
       )}

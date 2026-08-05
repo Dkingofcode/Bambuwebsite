@@ -1,11 +1,11 @@
-'use client';
+// 'use client';
 
-//import { useState } from 'react';
-import Navigation from '../components/Navigation';
-import FAQ from '../components/FAQ';
-import Footer from '../components/Footer';
+// //import { useState } from 'react';
+// import Navigation from '../components/Navigation';
+// import FAQ from '../components/FAQ';
+// import Footer from '../components/Footer';
 
-export default function ContactsPage() {
+// export default function ContactsPage() {
   // const [formData, setFormData] = useState({
   //   name: '',
   //   email: '',
@@ -29,12 +29,12 @@ export default function ContactsPage() {
   //   console.log('Form submitted:', formData);
   // };
 
-  return (
-    <main>
-      <Navigation />
+  // return (
+  //   <main>
+  //     <Navigation />
 
       {/* Section 1: Hero with Locations */}
-      {/* <section className="bg-[#325432] py-20 md:py-28">
+      {/* <section className="bg-[#052F23] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
@@ -66,14 +66,14 @@ export default function ContactsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Option 1: Calendly */}
             {/* <div>
-              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432] mb-6">
+              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#052F23] mb-6">
                 Option 1. Online Meeting with Our Team
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Book a consultation with our international branding agency team. Pick a time that works for you and meet us online. Use the Calendly widget below to book your spot.
               </p>
               <div className="bg-[#E7B621] rounded-2xl p-8 text-center">
-                <p className="font-poppins font-bold text-[#325432] text-2xl mb-4">Select a Day</p>
+                <p className="font-poppins font-bold text-[#052F23] text-2xl mb-4">Select a Day</p>
                 <div className="text-sm text-gray-700">
                   <div className="flex justify-between mb-4">
                     <span>&lt;</span>
@@ -91,7 +91,7 @@ export default function ContactsPage() {
 
             {/* Option 2: Contact Form Start */}
             {/* <div>
-              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#325432] mb-6">
+              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#052F23] mb-6">
                 Option 2. Contact Our Branding Agency
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -99,25 +99,25 @@ export default function ContactsPage() {
               </p>
               <form className="space-y-6">
                 <div>
-                  <label className="block text-lg font-bold text-[#325432] mb-3">What&apos;s your name?</label>
+                  <label className="block text-lg font-bold text-[#052F23] mb-3">What&apos;s your name?</label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Name"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#052F23] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
                 <div>
-                  <label className="block text-lg font-bold text-[#325432] mb-3">What&apos;s your email?</label>
+                  <label className="block text-lg font-bold text-[#052F23] mb-3">What&apos;s your email?</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Email"
-                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
+                    className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#052F23] placeholder-gray-400 focus:outline-none focus:border-[#E7B621]"
                   />
                 </div>
               </form>
@@ -132,9 +132,9 @@ export default function ContactsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Calendar & Timezone */}
             {/* <div>
-              <p className="text-lg font-bold text-[#325432] mb-4">Time zone</p>
+              <p className="text-lg font-bold text-[#052F23] mb-4">Time zone</p>
               <div className="bg-[#E7B621] rounded-2xl p-6 mb-8">
-                <div className="flex items-center gap-2 text-[#325432] font-bold text-lg">
+                <div className="flex items-center gap-2 text-[#052F23] font-bold text-lg">
                   <span>🌍</span>
                   <span>Pacific Time - US & Canada (10:21)</span>
                 </div>
@@ -152,7 +152,7 @@ export default function ContactsPage() {
  
  {/*            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-lg font-bold text-[#325432] mb-3">
+                <label className="block text-lg font-bold text-[#052F23] mb-3">
                   Please tell us a bit more about your project
                 </label>
                 <textarea
@@ -160,17 +160,17 @@ export default function ContactsPage() {
                   value={formData.projectDetails}
                   onChange={handleInputChange}
                   placeholder="What&apos;s the objective? Who&apos;s the audience? Dish out the details here..."
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#325432] placeholder-gray-400 focus:outline-none focus:border-[#E7B621] h-40 resize-none"
+                  className="w-full px-6 py-4 rounded-xl border border-gray-300 bg-white text-[#052F23] placeholder-gray-400 focus:outline-none focus:border-[#E7B621] h-40 resize-none"
                 />
               </div>
 
               <div>
-                <label className="block text-lg font-bold text-[#325432] mb-3">What is your budget range?</label>
+                <label className="block text-lg font-bold text-[#052F23] mb-3">What is your budget range?</label>
                 <select
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#325432] focus:outline-none focus:border-[#E7B621]"
+                  className="w-full px-6 py-3 rounded-xl border border-gray-300 bg-white text-[#052F23] focus:outline-none focus:border-[#E7B621]"
                 >
                   <option value="">Select</option>
                   <option value="5k-10k">$5,000 - $10,000</option>
@@ -189,7 +189,7 @@ export default function ContactsPage() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#E7B621] text-[#325432] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="w-full py-4 bg-[#E7B621] text-[#052F23] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Send project request
               </button>
@@ -206,7 +206,7 @@ export default function ContactsPage() {
 
       {/* Heading 
       <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#325432] mb-6">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#052F23] mb-6">
           Let&apos;s Build Something Exceptional
         </h2>
 
@@ -228,7 +228,7 @@ export default function ContactsPage() {
 
             {/* Name 
             <div>
-              <label className="block text-lg font-semibold text-[#325432] mb-3">
+              <label className="block text-lg font-semibold text-[#052F23] mb-3">
                 Your Name
               </label>
 
@@ -239,13 +239,13 @@ export default function ContactsPage() {
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="John Doe"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#052F23] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
             {/* Email 
             <div>
-              <label className="block text-lg font-semibold text-[#325432] mb-3">
+              <label className="block text-lg font-semibold text-[#052F23] mb-3">
                 Your Email
               </label>
 
@@ -256,13 +256,13 @@ export default function ContactsPage() {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="you@example.com"
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#052F23] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
             {/* Budget 
             <div>
-              <label className="block text-lg font-semibold text-[#325432] mb-3">
+              <label className="block text-lg font-semibold text-[#052F23] mb-3">
                 Budget Range
               </label>
 
@@ -271,7 +271,7 @@ export default function ContactsPage() {
                 name="budget"
                 value={formData.budget}
                 onChange={handleInputChange}
-                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full px-6 py-4 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#052F23] focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               >
                 <option value="">Select your budget</option>
                 <option value="5k-10k">$5,000 - $10,000</option>
@@ -283,11 +283,11 @@ export default function ContactsPage() {
 
             {/* Timezone Box 
             <div className="bg-[#E7B621] rounded-2xl p-6">
-              <p className="text-[#325432] font-bold text-lg mb-2">
+              <p className="text-[#052F23] font-bold text-lg mb-2">
                 🌍 International Team
               </p>
 
-              <p className="text-[#325432]/80 leading-relaxed">
+              <p className="text-[#052F23]/80 leading-relaxed">
                 We work with brands globally across London, Dubai, and Istanbul.
               </p>
             </div>
@@ -298,7 +298,7 @@ export default function ContactsPage() {
 
             {/* Project Details 
             <div className="flex-1">
-              <label className="block text-lg font-semibold text-[#325432] mb-3">
+              <label className="block text-lg font-semibold text-[#052F23] mb-3">
                 Tell Us About Your Project
               </label>
 
@@ -308,7 +308,7 @@ export default function ContactsPage() {
                 value={formData.projectDetails}
                 onChange={handleInputChange}
                 placeholder="Describe your project goals, target audience, brand vision, timelines, challenges, and anything else you'd like us to know..."
-                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#325432] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
+                className="w-full h-[320px] px-6 py-5 rounded-2xl border border-gray-300 bg-[#fafafa] text-[#052F23] placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#E7B621] transition-all"
               />
             </div>
 
@@ -332,7 +332,7 @@ export default function ContactsPage() {
             {/* Submit 
             <button
               type="submit"
-              className="mt-8 w-full py-5 bg-[#325432] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
+              className="mt-8 w-full py-5 bg-[#052F23] text-white font-poppins font-bold text-lg rounded-full hover:bg-[#244949] transition-all duration-300 hover:scale-[1.01]"
             >
               Send Project Request
             </button>
@@ -344,11 +344,11 @@ export default function ContactsPage() {
 </section> */}
 
       {/* Section 4: Offices Highlight */}
-      <section className="bg-[#325432] py-20 md:py-28">
+      {/* <section className="bg-[#052F23] py-20 md:py-28">
         <div className="container-max">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-white mb-12 text-center">
             Contact Our International Branding Agency
-          </h2>
+          </h2> */}
           {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {locations.map((location) => (
               <div key={location.name} className="bg-white rounded-2xl p-8">
@@ -357,11 +357,11 @@ export default function ContactsPage() {
               </div>
             ))}
           </div> */}
-        </div>
-      </section>
+        {/* </div>
+      </section> */}
 
       {/* Section 5: CTA */}
-      <section className="bg-[#325432] py-20 md:py-28">
+      {/* <section className="bg-[#052F23] py-20 md:py-28">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
@@ -376,7 +376,7 @@ export default function ContactsPage() {
               </h2>
               <a
                 href="#"
-                className="inline-block px-10 py-4 bg-[#E7B621] text-[#325432] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
+                className="inline-block px-10 py-4 bg-[#E7B621] text-[#052F23] font-poppins font-bold text-lg rounded-full hover:bg-[#E0F77D] transition-colors"
               >
                 Join the Team
               </a>
@@ -386,7 +386,295 @@ export default function ContactsPage() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ />
+      {/* <FAQ />
+
+      <Footer />
+    </main>
+  );
+}  */}
+
+
+
+
+
+
+
+
+
+'use client';
+
+import { useState } from 'react';
+import Navigation from '../components/Navigation';
+import FAQ from '../components/FAQ';
+import Footer from '../components/Footer';
+
+export default function BuildWithUsPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    needHelp: '',
+    businessNow: '',
+    hearAbout: '',
+  });
+
+  const [qualifications, setQualifications] = useState({
+    projectType: '',
+    timeline: '',
+    investment: '',
+    website: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleContactChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleQualificationChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setQualifications({
+      ...qualifications,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      setFormData({
+        name: '',
+        company: '',
+        email: '',
+        phone: '',
+        needHelp: '',
+        businessNow: '',
+        hearAbout: '',
+      });
+      setQualifications({
+        projectType: '',
+        timeline: '',
+        investment: '',
+        website: '',
+      });
+      setSubmitted(false);
+    }, 2000);
+  };
+
+  return (
+    <main>
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="bg-[#E1E1D5] py-20 md:py-32 lg:py-40">
+        <div className="container-max max-w-7xl px-6 md:px-12">
+          {/* Main Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
+            <span className="text-[#052F23]">Tell us what you are building. </span>
+            <br />
+            <span className="text-[#D0D731]">We will help you shape what comes next.</span>
+          </h1>
+
+          {/* Yellow accent line */}
+          <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
+
+          {/* Body Text */}
+          <p className="text-base md:text-lg text-[#052F23] leading-relaxed max-w-3xl font-normal mb-10 md:mb-12">
+            Whether you need a new identity, a sharper website, a campaign, production support, an AI workflow or a long term creative partner, start by telling us where the business is now and where you want it to go.
+          </p>
+
+          {/* CTA Button */}
+          <a
+            href="#form"
+            className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-sm md:text-base transition-all duration-300 hover:bg-[#D4F157]"
+          >
+            LET US BUILD TOGETHER
+          </a>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section id="form" className="bg-[#E1E1D5] py-20 md:py-32 lg:py-40">
+        <div className="container-max max-w-7xl px-6 md:px-12">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+            {/* Contact Form Fields */}
+            <div className="bg-[#E1E1D5] rounded-2xl p-8 md:p-10">
+              <div className="text-xs md:text-sm font-poppins font-bold text-gray-600 tracking-widest uppercase mb-8 md:mb-10">
+                Contact Form Fields
+              </div>
+
+              <div className="space-y-6 md:space-y-8">
+                {/* Name / Company */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Name / Company
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleContactChange}
+                    placeholder="Your name and company"
+                    className="w-full px-4 py-3 border-b-2 border-gray-400 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                    required
+                  />
+                </div>
+
+                {/* Email / Phone */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Email / Phone
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleContactChange}
+                    placeholder="your@email.com or +1 (555) 000-0000"
+                    className="w-full px-4 py-3 border-b-2 border-gray-400 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                    required
+                  />
+                </div>
+
+                {/* What do you need help with? */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    What do you need help with?
+                  </label>
+                  <textarea
+                    name="needHelp"
+                    value={formData.needHelp}
+                    onChange={handleContactChange}
+                    placeholder="Strategy, branding, digital, marketing, production, AI support..."
+                    rows={3}
+                    className="w-full px-4 py-3 border-b-2 border-gray-400 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23] resize-none"
+                    required
+                  />
+                </div>
+
+                {/* Where is the business now? */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Where is the business now?
+                  </label>
+                  <textarea
+                    name="businessNow"
+                    value={formData.businessNow}
+                    onChange={handleContactChange}
+                    placeholder="Current state, challenges, goals..."
+                    rows={3}
+                    className="w-full px-4 py-3 border-b-2 border-gray-400 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23] resize-none"
+                    required
+                  />
+                </div>
+
+                {/* How did you hear about us? */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    How did you hear about us?
+                  </label>
+                  <input
+                    type="text"
+                    name="hearAbout"
+                    value={formData.hearAbout}
+                    onChange={handleContactChange}
+                    placeholder="Referral, social media, search, other..."
+                    className="w-full px-4 py-3 border-b-2 border-gray-400 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Optional Qualification Fields */}
+            <div className="border-2 border-gray-400 rounded-2xl p-8 md:p-10">
+              <div className="text-xs md:text-sm font-poppins font-bold text-gray-600 tracking-widest uppercase mb-8 md:mb-10">
+                Optional Qualification
+              </div>
+
+              <div className="space-y-6 md:space-y-8">
+                {/* Project Type */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Project type
+                  </label>
+                  <input
+                    type="text"
+                    name="projectType"
+                    value={qualifications.projectType}
+                    onChange={handleQualificationChange}
+                    placeholder="e.g., New brand, website redesign, campaign..."
+                    className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                  />
+                </div>
+
+                {/* Preferred timeline */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Preferred timeline
+                  </label>
+                  <input
+                    type="text"
+                    name="timeline"
+                    value={qualifications.timeline}
+                    onChange={handleQualificationChange}
+                    placeholder="e.g., 3 months, 6 months, ASAP..."
+                    className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                  />
+                </div>
+
+                {/* Estimated investment range */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Estimated investment range
+                  </label>
+                  <input
+                    type="text"
+                    name="investment"
+                    value={qualifications.investment}
+                    onChange={handleQualificationChange}
+                    placeholder="Budget range..."
+                    className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                  />
+                </div>
+
+                {/* Existing website or social link */}
+                <div className="space-y-2">
+                  <label className="text-base md:text-lg font-poppins font-bold text-[#052F23]">
+                    Existing website or social link
+                  </label>
+                  <input
+                    type="url"
+                    name="website"
+                    value={qualifications.website}
+                    onChange={handleQualificationChange}
+                    placeholder="https://..."
+                    className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-[#D0D731] transition-colors text-[#052F23]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="lg:col-span-2">
+              <div className='flex justify-center'>
+              <button
+                type="submit"
+                className="w-1/2 px-8 py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-base transition-all duration-300 hover:bg-[#E0F77D] rounded"
+              >
+                {submitted ? 'Form submitted! Thank you.' : 'SEND MESSAGE'}
+              </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      {/* <FAQ /> */}
 
       <Footer />
     </main>

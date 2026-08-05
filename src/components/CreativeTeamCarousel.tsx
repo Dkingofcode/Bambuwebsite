@@ -8,44 +8,50 @@ interface TeamMember {
   role: string;
   description: string;
   emoji: string; // Using emojis as placeholder for 3D avatars
+  avatar?: string; // Optional avatar image URL
 }
 
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: 'Mustafa',
+    name: 'Ese',
     role: 'Brand Architect',
     description: 'Orchestrates the strategic vision, transforming complex brand challenges into elegant, powerful solutions that resonate across markets.',
     emoji: '👨‍💼',
+    avatar: '/PROFILE PHOTO_ESE-01-01.jpg', // Example avatar image
   },
   {
     id: 2,
-    name: 'Ethan',
+    name: 'Moyo',
     role: 'Art Director',
     description: 'Translates strategy into stunning visuals and compelling design systems that bring brands to life with precision and creativity.',
     emoji: '👨‍🎨',
+    avatar: '/PROFILE PHOTO_MOYO-01-01.jpg', // Example avatar image
   },
   {
     id: 3,
-    name: 'Duygu',
+    name: 'Rhema',
     role: 'CFO',
     description: 'Ensures every project delivers measurable value and sustainable growth. Balances creativity with smart business strategy.',
     emoji: '👩‍💼',
+    avatar: '/PROFILE PHOTO_RHEMA-01-01.jpg', // Example avatar image
   },
-  {
-    id: 4,
-    name: 'Tugberk',
-    role: 'Project Manager',
-    description: 'Orchestrates projects with clarity and focus, ensuring every idea becomes a seamless brand reality on schedule and on budget.',
-    emoji: '👨‍💻',
-  },
-  {
-    id: 5,
-    name: 'Uygar',
-    role: 'Project Manager',
-    description: 'Drives execution excellence, managing timelines and teams to ensure every brand project exceeds expectations.',
-    emoji: '👨‍💼',
-  },
+  // {
+  //   id: 4,
+  //   name: 'Tugberk',
+  //   role: 'Project Manager',
+  //   description: 'Orchestrates projects with clarity and focus, ensuring every idea becomes a seamless brand reality on schedule and on budget.',
+  //   emoji: '👨‍💻',
+  //   avatar: '/PROFILE PHOTO_TUGBERK-01-01.jpg', // Example avatar image
+  // },
+  // {
+  //   id: 5,
+  //   name: 'Uygar',
+  //   role: 'Project Manager',
+  //   description: 'Drives execution excellence, managing timelines and teams to ensure every brand project exceeds expectations.',
+  //   emoji: '👨‍💼',
+  //   avatar: '/avatars/uygar.png', // Example avatar image
+  // },
 ];
 
 export default function CreativeTeamCarousel() {
@@ -79,7 +85,7 @@ export default function CreativeTeamCarousel() {
     <section className="bg-[#D9DECC] py-20 md:py-28">
       <div className="container-max">
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#325432] mb-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#052F23] mb-16 text-center">
           Our Creative Brand Consultancy Team Making It All Happen
         </h2>
 
@@ -103,12 +109,12 @@ export default function CreativeTeamCarousel() {
                       }}
                     >
                       {/* Avatar Placeholder */}
-                      <div className={`w-24 h-24 rounded-full bg-gradient-to-br from-[#E7B621] to-[#325432] flex items-center justify-center text-4xl shadow-lg ${
+                      <div className={`w-24 h-24  rounded-full bg-gradient-to-br from-[#E7B621] to-[#052F23] flex items-center justify-center text-4xl shadow-lg ${
                         isActive ? 'ring-4 ring-[#E7B621]' : ''
                       }`}>
-                        {member.emoji}
+                       <img className='rounded-full w-full h-full object-cover' src={member.avatar} alt={member.name} />  
                       </div>
-                      <p className="text-sm font-bold text-[#325432] text-center">{member.name}</p>
+                      <p className="text-sm font-bold text-[#052F23] text-center">{member.name}</p>
                     </div>
                   );
                 })}
@@ -117,9 +123,9 @@ export default function CreativeTeamCarousel() {
           </div>
 
           {/* Active Member Card */}
-          <div className="bg-white rounded-3xl p-8 border-2 border-[#325432] h-full flex flex-col justify-center">
+          <div className="bg-white rounded-3xl p-8 border-2 border-[#052F23] h-full flex flex-col justify-center">
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-poppins font-bold text-[#325432] mb-2">
+              <h3 className="text-2xl font-poppins font-bold text-[#052F23] mb-2">
                 {current.name.toUpperCase()}
               </h3>
               <p className="text-gray-600 font-semibold mb-6">{current.role}</p>
@@ -134,7 +140,7 @@ export default function CreativeTeamCarousel() {
         <div className="flex gap-4 justify-center mt-12">
           <button
             onClick={handlePrev}
-            className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#052F23] text-[#052F23] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Previous team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -143,7 +149,7 @@ export default function CreativeTeamCarousel() {
           </button>
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+            className="w-12 h-12 rounded-full border-2 border-[#052F23] text-[#052F23] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
             aria-label="Next team member"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -155,3 +161,9 @@ export default function CreativeTeamCarousel() {
     </section>
   );
 }
+
+
+
+
+
+                        // {member.emoji}

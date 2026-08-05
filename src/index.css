@@ -14,7 +14,7 @@
 
 
 :root {
-  --background: #325432;
+  --background: #052F23;
   --foreground: #ffffff;
   --accent: #E7B621;
   --muted: #b0b0b0;
@@ -53,12 +53,12 @@
 
   html {
     scroll-behavior: smooth;
-    background-color: #325432;
+    background-color: #052F23;
     overflow-x: hidden;
   }
 
   body {
-    background-color: #325432;
+    background-color: #052F23;
     color: white;
     overflow-x: hidden;
     min-height: 100vh;
@@ -87,7 +87,7 @@
   }
   
   .btn-primary {
-    @apply px-8 py-3 bg-[#E7B621] text-[#325432] font-poppins font-bold rounded-full hover:bg-[#E7B001] transition-all duration-300 transform hover:scale-105;
+    @apply px-8 py-3 bg-[#E7B621] text-[#052F23] font-poppins font-bold rounded-full hover:bg-[#E7B001] transition-all duration-300 transform hover:scale-105;
   }
   
   .btn-outline {

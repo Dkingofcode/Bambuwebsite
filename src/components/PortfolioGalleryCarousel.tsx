@@ -14,11 +14,11 @@ export default function PortfolioGalleryCarousel() {
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const portfolioItems: PortfolioItem[] = [
-    { id: 1, title: 'Brand Identity', category: 'Branding', image: 'linear-gradient(135deg, #E7B621, #325432)' },
-    { id: 2, title: 'Packaging Design', category: 'Product', image: 'linear-gradient(135deg, #325432, #E7B621)' },
-    { id: 3, title: 'Web Design', category: 'Digital', image: 'linear-gradient(135deg, #ededda, #325432)' },
+    { id: 1, title: 'Brand Identity', category: 'Branding', image: 'linear-gradient(135deg, #E7B621, #052F23)' },
+    { id: 2, title: 'Packaging Design', category: 'Product', image: 'linear-gradient(135deg, #052F23, #E7B621)' },
+    { id: 3, title: 'Web Design', category: 'Digital', image: 'linear-gradient(135deg, #ededda, #052F23)' },
     { id: 4, title: 'Campaign Assets', category: 'Marketing', image: 'linear-gradient(135deg, #E7B621, #ededda)' },
-    { id: 5, title: 'Visual System', category: 'Branding', image: 'linear-gradient(135deg, #325432, #ededda)' },
+    { id: 5, title: 'Visual System', category: 'Branding', image: 'linear-gradient(135deg, #052F23, #ededda)' },
   ];
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function PortfolioGalleryCarousel() {
   };
 
   return (
-    <section className="bg-[#ededda] py-16 md:py-20 relative overflow-hidden">
+    <section className="bg-[#E1E1D5] py-16 md:py-20 relative overflow-hidden">
       <div className="container-max">
         {/* Carousel Container */}
         <div className="relative">
@@ -88,7 +88,7 @@ export default function PortfolioGalleryCarousel() {
             <div className="flex gap-4">
               <button
                 onClick={handlePrev}
-                className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#325432] hover:text-white transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#052F23] text-[#052F23] flex items-center justify-center hover:bg-[#052F23] hover:text-white transition-all duration-300"
                 aria-label="Previous portfolio item"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -97,7 +97,7 @@ export default function PortfolioGalleryCarousel() {
               </button>
               <button
                 onClick={handleNext}
-                className="w-12 h-12 rounded-full border-2 border-[#325432] text-[#325432] flex items-center justify-center hover:bg-[#325432] hover:text-white transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#052F23] text-[#052F23] flex items-center justify-center hover:bg-[#052F23] hover:text-white transition-all duration-300"
                 aria-label="Next portfolio item"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -107,7 +107,7 @@ export default function PortfolioGalleryCarousel() {
             </div>
 
             {/* Counter */}
-            <div className="text-sm font-semibold text-[#325432]">
+            <div className="text-sm font-semibold text-[#052F23]">
               {String(currentIndex + 1).padStart(2, '0')} / {String(portfolioItems.length).padStart(2, '0')}
             </div>
 
@@ -116,8 +116,8 @@ export default function PortfolioGalleryCarousel() {
               onClick={() => setIsAutoPlay(!isAutoPlay)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                 isAutoPlay
-                  ? 'bg-[#E7B621] text-[#325432] hover:bg-[#E0F77D]'
-                  : 'bg-gray-300 text-[#325432] hover:bg-gray-400'
+                  ? 'bg-[#E7B621] text-[#052F23] hover:bg-[#E0F77D]'
+                  : 'bg-gray-300 text-[#052F23] hover:bg-gray-400'
               }`}
             >
               {isAutoPlay ? 'Pause' : 'Play'}

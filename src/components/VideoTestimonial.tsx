@@ -143,7 +143,7 @@ useEffect(() => {
                         />
                         <path
                           d="M32 28L32 52L54 40L32 28Z"
-                          fill="#325432"
+                          fill="#052F23"
                         />
                       </svg>
                     </div>
@@ -203,7 +203,7 @@ useEffect(() => {
                     </button>
                     <button
                       onClick={handlePauseClick}
-                      className="px-4 py-2 bg-[#E7B621] text-[#325432] rounded-lg hover:bg-[#E0F77D] transition-all duration-300 font-semibold text-sm"
+                      className="px-4 py-2 bg-[#E7B621] text-[#052F23] rounded-lg hover:bg-[#E0F77D] transition-all duration-300 font-semibold text-sm"
                     >
                       Pause
                     </button>
@@ -215,7 +215,7 @@ useEffect(() => {
 
           {/* Testimonial Content */}
           <div className="lg:col-span-1">
-            <blockquote className="text-2xl md:text-3xl font-poppins font-bold text-[#325432] mb-8">
+            <blockquote className="text-2xl md:text-3xl font-poppins font-bold text-[#052F23] mb-8">
               "Our experience with MarkaWorks has been excellent"
             </blockquote>
 
@@ -227,7 +227,7 @@ useEffect(() => {
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div>
-                <h3 className="font-semibold text-[#325432] font-poppins">Irene O.</h3>
+                <h3 className="font-semibold text-[#052F23] font-poppins">Irene O.</h3>
                 <p className="text-gray-700 text-sm">CEO, Birtz Nutrition</p>
                 <a
                   href="https://birtznutrition.com"
@@ -243,7 +243,7 @@ useEffect(() => {
             {/* Case Study Button */}
             <a
               href="/portfolio/birtz/"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#325432] text-white rounded-lg hover:bg-[#2a4a4a] transition-all duration-300 font-semibold"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#052F23] text-white rounded-lg hover:bg-[#2a4a4a] transition-all duration-300 font-semibold"
             >
               <span>View Case Study</span>
               <svg

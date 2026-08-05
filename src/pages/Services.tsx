@@ -1,9 +1,14 @@
 import Navigation from '../components/Navigation';
-import PortfolioCarousel from '../components/PortfolioCarousel';
+//import PortfolioCarousel from '../components/PortfolioCarousel';
 //import ServiceSlides from '../components/ServiceSlides';
-import FAQ from '../components/FAQ';
+//import FAQ from '../components/FAQ';
+import ServicesOverview from '../components/ServicesOverview';
+import StrategyBrandService from '../components/StrategyBrandService';
+import DigitalMarketingService from '../components/DigitalMarketingService';
+import AIBusinessSupport from '../components/AIBusinessSupport';
 //import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
+import ProductionService from '../components/ProductionService';
 
 export const metadata = {
   title: 'Services | Bambu',
@@ -14,58 +19,66 @@ export default function ServicesPage() {
   return (
     <main>
       <Navigation />
-
-      {/* Heading & Text One */}
-      <section className="bg-[#D9DECC] py-20 md:py-28">
-        <div className="container-max">
-          <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#325432] mb-8 text-balance">
-            The Work That <span className="text-[#E7B621]">Moves the Business.</span>
-            <br />
-            Not someday. Not softly. Now.
-          </h1>
-          <p className="text-lg leading-relaxed text-[#325432] max-w-4xl">
-            As an international branding and web design agency, we don&apos;t sell creativity we use it. Our brand design agency services close gaps, gain ground, and push brands where they need to go. Faster. Sharper. Without detours. Serving clients globally with offices in London, Dubai, and Istanbul.
-          </p>
-        </div>
-      </section>
-
-      {/* Portfolio Carousel */}
-      <PortfolioCarousel />
-
-      {/* Heading & Text Two */}
-      <section className="bg-[#D9DECC] py-20 md:py-28">
-        <div className="container-max">
-          <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#325432] mb-8 text-balance">
-            What We Do. What <span className="text-[#E7B621]">Moves Brands.</span>
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg leading-relaxed text-[#325432]">
-                Bambu is an international brand design agency delivering creative assets designed to perform. If, on screen, in pitch rooms, and in people&apos;s hands, our brand agency services span global markets with presence in London, Dubai, and Istanbul. No fluff. No filler. Just what moves.
-           We are a creative agency driven by one core belief: great brands aren’t made, they’re built. Our purpose is simple yet powerful, to build brands that are structured, intentional, and built to last.
-
-We specialize in crafting bold, strategic, and meaningful identities that go beyond aesthetics. Our services span: Brand Identity Conceptualization, Strategy & Consultation, Website Design, Marketing, Digital Marketing, Email Marketing, Motion Design, and Animation.
-At the heart of everything we do is our guiding principle: Building. We don’t jump into execution. We start with concept, because a strong foundation shapes everything that follows. It’s how we ensure that every brand we create has depth, clarity, and a compelling story.
-Every project we work on, we ask the questions: What will your brand represent? How will it grow? We’re here to build brands that won't just exist but brands that will thrive, evolve and leave a legacy. We build something TIMELESS. It's Time to Build with Bambu.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img src="/annieunsplash (1).jpg" alt="Brand concept" className="w-210 h-110  object-contain" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Slides */}
-      {/* <ServiceSlides /> */}
-
-      {/* FAQ Section */}
-      <FAQ />
-
-      {/* Final CTA */}
-      {/* <FinalCTA /> */}
+      <ServicesOverview />
+      <StrategyBrandService />
+      <DigitalMarketingService />
+      <ProductionService />
+      <AIBusinessSupport />
 
       <Footer />
     </main>
   );
 }
+
+
+
+
+// Heading & Text One
+//       <section className="bg-[#D9DECC] py-20 md:py-28">
+//         <div className="container-max">
+//           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-[#052F23] mb-8 text-balance">
+//             The Work That <span className="text-[#E7B621]">Moves the Business.</span>
+//             <br />
+//             Not someday. Not softly. Now.
+//           </h1>
+//           <p className="text-lg leading-relaxed text-[#052F23] max-w-4xl">
+//             As an international branding and web design agency, we don&apos;t sell creativity we use it. Our brand design agency services close gaps, gain ground, and push brands where they need to go. Faster. Sharper. Without detours. Serving clients globally with offices in London, Dubai, and Istanbul.
+//           </p>
+//         </div>
+//       </section>
+
+      {/* Portfolio Carousel */}
+      // <PortfolioCarousel />
+
+      {/* Heading & Text Two */}
+//       <section className="bg-[#D9DECC] py-20 md:py-28">
+//         <div className="container-max">
+//           <h2 className="text-5xl md:text-6xl font-poppins font-bold text-[#052F23] mb-8 text-balance">
+//             What We Do. What <span className="text-[#E7B621]">Moves Brands.</span>
+//           </h2>
+//           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+//             <div>
+//               <p className="text-lg leading-relaxed text-[#052F23]">
+//                 Bambu is an international brand design agency delivering creative assets designed to perform. If, on screen, in pitch rooms, and in people&apos;s hands, our brand agency services span global markets with presence in London, Dubai, and Istanbul. No fluff. No filler. Just what moves.
+//            We are a creative agency driven by one core belief: great brands aren’t made, they’re built. Our purpose is simple yet powerful, to build brands that are structured, intentional, and built to last.
+
+// We specialize in crafting bold, strategic, and meaningful identities that go beyond aesthetics. Our services span: Brand Identity Conceptualization, Strategy & Consultation, Website Design, Marketing, Digital Marketing, Email Marketing, Motion Design, and Animation.
+// At the heart of everything we do is our guiding principle: Building. We don’t jump into execution. We start with concept, because a strong foundation shapes everything that follows. It’s how we ensure that every brand we create has depth, clarity, and a compelling story.
+// Every project we work on, we ask the questions: What will your brand represent? How will it grow? We’re here to build brands that won't just exist but brands that will thrive, evolve and leave a legacy. We build something TIMELESS. It's Time to Build with Bambu.
+//               </p>
+//             </div>
+//             <div className="flex justify-center">
+//               <img src="/annieunsplash (1).jpg" alt="Brand concept" className="w-210 h-110  object-contain" />
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+      {/* Service Slides */}
+      {/* <ServiceSlides /> */}
+
+      {/* FAQ Section */}
+//      <FAQ />
+
+      {/* Final CTA */}
+      {/* <FinalCTA /> */}

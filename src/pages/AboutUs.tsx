@@ -21,9 +21,9 @@ export default function AboutUsPage() {
       <Partners />
       <FounderVision />
       <CreativeTeamCarousel />
-      <Methodology />
+      {/* <Methodology /> */}
       {/* <FinalCTA /> */}
-      <FAQ />
+      {/* <FAQ /> */}
       <Footer />
     </main>
   );

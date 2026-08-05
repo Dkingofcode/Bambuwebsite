@@ -124,7 +124,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <section id="work" className="section-spacing bg-[#325432]">
+    <section id="work" className="section-spacing bg-[#052F23]">
       <div className="container-max">
         <h2 className="heading-lg mb-12 text-center">
           Featured <span className="text-[#E7B621]">Work</span>

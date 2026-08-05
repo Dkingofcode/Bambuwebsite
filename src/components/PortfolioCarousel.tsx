@@ -77,7 +77,7 @@ export default function PortfolioCarousel() {
 
         {/* Portfolio Gallery Section */}
         <div className="markaworks-portfolio-gallery-wrapper relative w-full h-96" ref={sectionRef}>
-          <div className="markaworks-gallery-nav markaworks-gallery-nav-left absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#325432] flex items-center justify-center">
+          <div className="markaworks-gallery-nav markaworks-gallery-nav-left absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#052F23] flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -126,7 +126,7 @@ export default function PortfolioCarousel() {
                       ></div>
                       {/* Button */}
                       <button
-                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#325432] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
+                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#052F23] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
                         style={{
                           boxShadow: '0 0 20px rgba(212, 241, 87, 0.3)',
                         }}
@@ -173,7 +173,7 @@ export default function PortfolioCarousel() {
                       ></div>
                       {/* Button */}
                       <button
-                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#325432] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
+                        className="relative w-24 h-24 rounded-full bg-[#E7B621] text-[#052F23] flex items-center justify-center font-poppins font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[#E0F77D]"
                         style={{
                           boxShadow: '0 0 20px rgba(212, 241, 87, 0.3)',
                         }}
@@ -187,7 +187,7 @@ export default function PortfolioCarousel() {
             </div>
           </div>
 
-          <div className="markaworks-gallery-nav markaworks-gallery-nav-right absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#325432] flex items-center justify-center">
+          <div className="markaworks-gallery-nav markaworks-gallery-nav-right absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#E7B621] text-[#052F23] flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

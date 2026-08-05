@@ -135,7 +135,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="section-spacing bg-[#325432]">
+    <section id="services" className="section-spacing bg-[#052F23]">
       <div className="container-max">
         <h2 className="heading-lg mb-12 text-center">
           Our <span className="text-[#E7B621]">Services</span>

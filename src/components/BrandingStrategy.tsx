@@ -89,7 +89,7 @@ export default function BrandingStrategy() {
   const category = serviceCategories[currentIndex];
 
   return (
-    <section ref={sectionRef} className="bg-[#ededda] py-20 md:py-28 relative overflow-hidden">
+    <section ref={sectionRef} className="bg-[#E1E1D5] py-20 md:py-28 relative overflow-hidden">
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - Rotating Spin Wheel Image */}
@@ -116,7 +116,7 @@ export default function BrandingStrategy() {
                 animation: 'spin 6s linear infinite',
               }}
             >
-              <div className="text-sm font-bold text-[#325432] bg-white rounded-full w-28 h-28 flex items-center justify-center">
+              <div className="text-sm font-bold text-[#052F23] bg-white rounded-full w-28 h-28 flex items-center justify-center">
                 {String(currentIndex + 1).padStart(2, '0')} / {String(serviceCategories.length).padStart(2, '0')}
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function BrandingStrategy() {
           {/* Right - Content Carousel */}
           <div className="space-y-8">
             <div>
-              <h2 className="heading-lg mb-4 text-[#325432]">
+              <h2 className="heading-lg mb-4 text-[#052F23]">
                 {category.title}
               </h2>
               <div className="h-1 w-20 bg-[#E7B621] rounded-full" />
@@ -138,7 +138,7 @@ export default function BrandingStrategy() {
                   key={idx}
                   className="border-l-4 border-[#E7B621] pl-6 py-2 hover:pl-8 transition-all duration-300"
                 >
-                  <h3 className="text-lg font-poppins font-bold text-[#325432] mb-2">
+                  <h3 className="text-lg font-poppins font-bold text-[#052F23] mb-2">
                     {service.name}
                   </h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
@@ -152,7 +152,7 @@ export default function BrandingStrategy() {
             <div className="flex gap-4 pt-8">
               <button
                 onClick={() => setCurrentIndex((prev) => (prev - 1 + serviceCategories.length) % serviceCategories.length)}
-                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#052F23] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
                 aria-label="Previous category"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -161,7 +161,7 @@ export default function BrandingStrategy() {
               </button>
               <button
                 onClick={() => setCurrentIndex((prev) => (prev + 1) % serviceCategories.length)}
-                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#325432] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
+                className="w-12 h-12 rounded-full border-2 border-[#E7B621] text-[#052F23] flex items-center justify-center hover:bg-[#E7B621] transition-all duration-300"
                 aria-label="Next category"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
