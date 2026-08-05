@@ -33,6 +33,9 @@ const testimonials: Testimonial[] = [
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  console.log('Active Index:', activeIndex); // Debugging line
+  console.log(setActiveIndex); // Debugging line
+
   return (
     <section className="bg-[#E1E1D5] py-20 md:py-32 lg:py-40">
       <div className="container-max max-w-7xl px-6 md:px-12">

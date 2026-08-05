@@ -234,30 +234,30 @@
 
 import { useEffect, useState, useRef } from 'react';
 
-const portfolioItems = [
-  { id: 1, title: 'HOLME Home Luxury Fragrance', image: 'https://markaworks.com/wp-content/uploads/2026/01/holme_cover-1.gif', href: '/portfolio/holme/' },
-  { id: 2, title: 'BARS Brand Identity', image: 'https://markaworks.com/wp-content/uploads/2026/01/bars_presentation_01.webp', href: '/projects/bars%20company.html' },
-  { id: 3, title: 'GL Peptides', image: 'https://markaworks.com/wp-content/uploads/2026/01/glpeptides01.jpg', href: '/projects/glpeptides/' },
-  { id: 4, title: 'LA MAMA Coffee Brand', image: 'https://markaworks.com/wp-content/uploads/2026/02/lamama_presentation-04.webp', href: '/portfolio/la-mama/' },
-  { id: 5, title: 'Rauph', image: 'https://markaworks.com/wp-content/uploads/2025/12/rauph_presentation_Artboard-1.jpg', href: '/projects/rauph/' },
-  { id: 6, title: 'Rauph UI', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cca059240284095.693af391570c1.jpg', href: '/projects/rauph-ui/' },
-  { id: 7, title: 'VOXO', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ae0691239267949.6925cb3a5edb7.jpg', href: '/portfolio/voxo/' },
-  { id: 8, title: 'MUUM', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1aa9de239201603.692491611b8cf.jpg', href: '/portfolio/muum/' },
-  { id: 9, title: 'MUUM UI', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/63c070239041909.69209fd51f130.jpg', href: '/portfolio/muum-ui/' },
-  { id: 10, title: 'Birtz', image: 'https://markaworks.com/wp-content/uploads/2025/11/Blitz01.jpg', href: '/portfolio/birtz/' },
-  { id: 11, title: 'YU', image: 'https://markaworks.com/wp-content/uploads/2025/10/01-1.jpg', href: '/projects/yu/' },
-  { id: 12, title: 'Snax', image: 'https://markaworks.com/wp-content/uploads/2025/10/Snax_01.jpg', href: '/projects/snax/' },
-  { id: 13, title: 'Umri', image: 'https://markaworks.com/wp-content/uploads/2025/10/Umri_01.jpg', href: '/projects/umri/' },
-  { id: 14, title: 'Elevated', image: 'https://markaworks.com/wp-content/uploads/2025/10/Elevated_01.jpg', href: '/projects/elevated/' },
-  { id: 15, title: 'Skindeep', image: 'https://markaworks.com/wp-content/uploads/2025/10/1-1920x1549.jpg', href: '/projects/skindeep/' },
-  { id: 16, title: 'Pheros', image: 'https://markaworks.com/wp-content/uploads/2025/10/21-1920x1518.jpg', href: '/projects/pheros/' },
-  { id: 17, title: 'Glowie', image: 'https://markaworks.com/wp-content/uploads/2025/10/1-1920x1464.jpg', href: '/projects/glowie/' },
-  { id: 18, title: 'League&', image: 'https://markaworks.com/wp-content/uploads/2024/11/1-1-1920x1267.jpg', href: '/projects/leagueand/' },
-  { id: 19, title: 'Viscerex', image: 'https://markaworks.com/wp-content/uploads/2024/11/1-1920x1475.jpg', href: '/projects/viscerex/' },
-  { id: 20, title: 'Resetcare', image: 'https://markaworks.com/wp-content/uploads/2024/09/17-1920x2371.jpg', href: '/projects/resetcare/' },
-  { id: 21, title: 'MoreBabies / Branding', image: 'https://markaworks.com/wp-content/uploads/2024/08/1-1-1920x1356.jpg', href: '/projects/morebabies-branding/' },
-  { id: 22, title: 'Awelly / UI Design', image: 'https://markaworks.com/wp-content/uploads/2024/08/awellycover-1920x1535.jpg', href: '/projects/awelly-ui-design/' },
-];
+// const portfolioItems = [
+//   { id: 1, title: 'HOLME Home Luxury Fragrance', image: 'https://markaworks.com/wp-content/uploads/2026/01/holme_cover-1.gif', href: '/portfolio/holme/' },
+//   { id: 2, title: 'BARS Brand Identity', image: 'https://markaworks.com/wp-content/uploads/2026/01/bars_presentation_01.webp', href: '/projects/bars%20company.html' },
+//   { id: 3, title: 'GL Peptides', image: 'https://markaworks.com/wp-content/uploads/2026/01/glpeptides01.jpg', href: '/projects/glpeptides/' },
+//   { id: 4, title: 'LA MAMA Coffee Brand', image: 'https://markaworks.com/wp-content/uploads/2026/02/lamama_presentation-04.webp', href: '/portfolio/la-mama/' },
+//   { id: 5, title: 'Rauph', image: 'https://markaworks.com/wp-content/uploads/2025/12/rauph_presentation_Artboard-1.jpg', href: '/projects/rauph/' },
+//   { id: 6, title: 'Rauph UI', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cca059240284095.693af391570c1.jpg', href: '/projects/rauph-ui/' },
+//   { id: 7, title: 'VOXO', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ae0691239267949.6925cb3a5edb7.jpg', href: '/portfolio/voxo/' },
+//   { id: 8, title: 'MUUM', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1aa9de239201603.692491611b8cf.jpg', href: '/portfolio/muum/' },
+//   { id: 9, title: 'MUUM UI', image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/63c070239041909.69209fd51f130.jpg', href: '/portfolio/muum-ui/' },
+//   { id: 10, title: 'Birtz', image: 'https://markaworks.com/wp-content/uploads/2025/11/Blitz01.jpg', href: '/portfolio/birtz/' },
+//   { id: 11, title: 'YU', image: 'https://markaworks.com/wp-content/uploads/2025/10/01-1.jpg', href: '/projects/yu/' },
+//   { id: 12, title: 'Snax', image: 'https://markaworks.com/wp-content/uploads/2025/10/Snax_01.jpg', href: '/projects/snax/' },
+//   { id: 13, title: 'Umri', image: 'https://markaworks.com/wp-content/uploads/2025/10/Umri_01.jpg', href: '/projects/umri/' },
+//   { id: 14, title: 'Elevated', image: 'https://markaworks.com/wp-content/uploads/2025/10/Elevated_01.jpg', href: '/projects/elevated/' },
+//   { id: 15, title: 'Skindeep', image: 'https://markaworks.com/wp-content/uploads/2025/10/1-1920x1549.jpg', href: '/projects/skindeep/' },
+//   { id: 16, title: 'Pheros', image: 'https://markaworks.com/wp-content/uploads/2025/10/21-1920x1518.jpg', href: '/projects/pheros/' },
+//   { id: 17, title: 'Glowie', image: 'https://markaworks.com/wp-content/uploads/2025/10/1-1920x1464.jpg', href: '/projects/glowie/' },
+//   { id: 18, title: 'League&', image: 'https://markaworks.com/wp-content/uploads/2024/11/1-1-1920x1267.jpg', href: '/projects/leagueand/' },
+//   { id: 19, title: 'Viscerex', image: 'https://markaworks.com/wp-content/uploads/2024/11/1-1920x1475.jpg', href: '/projects/viscerex/' },
+//   { id: 20, title: 'Resetcare', image: 'https://markaworks.com/wp-content/uploads/2024/09/17-1920x2371.jpg', href: '/projects/resetcare/' },
+//   { id: 21, title: 'MoreBabies / Branding', image: 'https://markaworks.com/wp-content/uploads/2024/08/1-1-1920x1356.jpg', href: '/projects/morebabies-branding/' },
+//   { id: 22, title: 'Awelly / UI Design', image: 'https://markaworks.com/wp-content/uploads/2024/08/awellycover-1920x1535.jpg', href: '/projects/awelly-ui-design/' },
+// ];
 
 
 export default function BambuHero() {
@@ -284,6 +284,8 @@ export default function BambuHero() {
       const offset = scrollProgress * maxOffset;
       setScrollOffset(offset);
     };
+
+    console.log(scrollOffset);
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);

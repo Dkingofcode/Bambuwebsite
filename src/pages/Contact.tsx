@@ -405,7 +405,7 @@
 
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
-import FAQ from '../components/FAQ';
+//import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 export default function BuildWithUsPage() {

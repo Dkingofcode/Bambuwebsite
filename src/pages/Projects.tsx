@@ -48,8 +48,8 @@
 
 
 import Navigation from '../components/Navigation';
-import Testimonials from '../components/Testimonials';
-import FinalCTA from '../components/FinalCTA';
+//import Testimonials from '../components/Testimonials';
+//import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 
 export const metadata = {
