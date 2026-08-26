@@ -371,7 +371,7 @@ export default function Footer() {
                 <span className="absolute bottom-0 left-0 h-8 w-9 -rotate-[28deg] rounded-[18px] bg-[#d4e52b]" />
               </span>
               <span className="text-[40px] font-bold leading-none tracking-[-0.06em] text-[#f4f2ed]">Bambu</span> */}
-              <img src="/public/WHITE PRIMARY LOGO@4x.png" alt="Bambu Logo" className="h-12 w-auto" />
+              <img src="/WHITE PRIMARY LOGO@4x.png" alt="Bambu Logo" className="h-12 w-auto" />
             </Link>
             <p className="mx-auto mt-5 max-w-[310px] text-[22px] leading-[1.28] tracking-[-0.02em] md:mx-0 md:text-[23px]">
               Creative work that moves<br className="hidden md:block" /> businesses forward.

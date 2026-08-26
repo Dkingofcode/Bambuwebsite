@@ -34,7 +34,7 @@ export default function Navigation() {
   <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg">
     <img
       className="w-8 h-10 object-contain"
-      src="/public/ICON@4x.png"
+      src="/ICON@4x.png"
       alt="BAMBU Logo"
     />
   </div>
