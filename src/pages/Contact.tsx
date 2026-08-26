@@ -490,7 +490,7 @@ export default function BuildWithUsPage() {
           {/* CTA Button */}
           <a
             href="#form"
-            className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-sm md:text-base transition-all duration-300 hover:bg-[#D4F157]"
+            className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-sm md:text-base transition-all duration-300 hover:bg-[#D4F157]"
           >
             LET US BUILD TOGETHER
           </a>
@@ -663,7 +663,7 @@ export default function BuildWithUsPage() {
               <div className='flex justify-center'>
               <button
                 type="submit"
-                className="w-1/2 px-8 py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-base transition-all duration-300 hover:bg-[#E0F77D] rounded"
+                className="w-1/2 px-8 py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-base transition-all duration-300 hover:bg-[#E0F77D]"
               >
                 {submitted ? 'Form submitted! Thank you.' : 'SEND MESSAGE'}
               </button>

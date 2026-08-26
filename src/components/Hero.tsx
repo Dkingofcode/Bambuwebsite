@@ -327,35 +327,50 @@ export default function BambuHero() {
           {/* Service Pills */}
           <div className="flex flex-wrap gap-3 md:gap-4 mb-16 md:mb-20">
             {services.map((service, idx) => (
-              <div className='border border-gray-600 rounded-4xl px-4'>
-              <div
+              <div className=''>
+               <div
                 key={service}
-                className={`px-5 md:px-6 py-2.5 md:py-3 border border-gray-600 text-[#E1E1D5] text-sm md:text-base font-poppins font-medium rounded-full transition-all duration-500 hover:border-[#D0D731] hover:text-[#D0D731] ${
+                className={`group relative inline-flex cursor-default items-center overflow-hidden rounded-full border border-gray-600 px-5 py-2.5 text-sm font-poppins font-medium text-gray-400 transition-all duration-500 hover:-translate-y-1 hover:border-[#D4F157] hover:bg-[#D4F157] hover:text-[#1a3a3a] hover:shadow-[0_10px_24px_rgba(212,241,87,0.18)] md:px-6 md:py-3 md:text-base ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
                 }`}
                 style={{ transitionDelay: `${idx * 60}ms` }}
               >
-                {service}
+                <span className="relative h-5 overflow-hidden md:h-6">
+                  <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">
+                    {service}
+                  </span>
+                  <span aria-hidden="true" className="absolute left-0 top-full block whitespace-nowrap font-bold text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">
+                    {service}&nbsp; →
+                  </span>
+                </span>
               </div>
+
                   </div>
             ))}
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
+           <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
             <a
               href="/contacts"
-              className="inline-flex items-center justify-center px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-sm md:text-base rounded transition-all duration-300 hover:bg-[#E0F77D]"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#D4F157] px-8 py-3 text-sm font-poppins font-bold text-[#1a3a3a] transition-all duration-500 hover:-translate-y-1 hover:bg-[#E0F77D] hover:shadow-[0_12px_28px_rgba(212,241,87,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4F157] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a3a3a] md:px-10 md:py-4 md:text-base"
             >
-              BUILD WITH US
+              <span className="relative h-5 overflow-hidden md:h-6">
+                <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">BUILD WITH US</span>
+                <span aria-hidden="true" className="absolute left-0 top-full block text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">BUILD WITH US&nbsp; →</span>
+              </span>
             </a>
             <a
               href="/projects"
-              className="inline-flex items-center justify-center px-8 md:px-10 py-3 md:py-4 border-2 border-[#D0D731] text-[#D0D731] font-poppins font-bold text-sm md:text-base  rounded-4xl transition-all duration-300 hover:bg-[#D0D731] hover:text-[#052F23]"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-[#D4F157] px-8 py-3 text-sm font-poppins font-bold text-[#D4F157] transition-all duration-500 hover:-translate-y-1 hover:bg-[#D4F157] hover:text-[#1a3a3a] hover:shadow-[0_12px_28px_rgba(212,241,87,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4F157] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a3a3a] md:px-10 md:py-4 md:text-base"
             >
-              VIEW OUR WORK
+              <span className="relative h-5 overflow-hidden md:h-6">
+                <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">VIEW OUR WORK</span>
+                <span aria-hidden="true" className="absolute left-0 top-full block text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">VIEW OUR WORK&nbsp; →</span>
+              </span>
             </a>
           </div>
+       
         </div>
       
        
@@ -366,3 +381,52 @@ export default function BambuHero() {
     </section>
   );
 }
+
+
+
+
+
+{/* Service Pills */}
+          // <div className="flex flex-wrap gap-3 md:gap-4 mb-16 md:mb-20">
+          //   {services.map((service, idx) => (
+          //     <div
+          //       key={service}
+          //       className={`group relative inline-flex cursor-default items-center overflow-hidden rounded-full border border-gray-600 px-5 py-2.5 text-sm font-poppins font-medium text-gray-400 transition-all duration-500 hover:-translate-y-1 hover:border-[#D4F157] hover:bg-[#D4F157] hover:text-[#1a3a3a] hover:shadow-[0_10px_24px_rgba(212,241,87,0.18)] md:px-6 md:py-3 md:text-base ${
+          //         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+          //       }`}
+          //       style={{ transitionDelay: `${idx * 60}ms` }}
+          //     >
+          //       <span className="relative h-5 overflow-hidden md:h-6">
+          //         <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">
+          //           {service}
+          //         </span>
+          //         <span aria-hidden="true" className="absolute left-0 top-full block whitespace-nowrap font-bold text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">
+          //           {service}&nbsp; →
+          //         </span>
+          //       </span>
+          //     </div>
+          //   ))}
+          // </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
+            <a
+              href="/contacts"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#D4F157] px-8 py-3 text-sm font-poppins font-bold text-[#1a3a3a] transition-all duration-500 hover:-translate-y-1 hover:bg-[#E0F77D] hover:shadow-[0_12px_28px_rgba(212,241,87,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4F157] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a3a3a] md:px-10 md:py-4 md:text-base"
+            >
+              <span className="relative h-5 overflow-hidden md:h-6">
+                <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">BUILD WITH US</span>
+                <span aria-hidden="true" className="absolute left-0 top-full block text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">BUILD WITH US&nbsp; →</span>
+              </span>
+            </a>
+            <a
+              href="/projects"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-[#D4F157] px-8 py-3 text-sm font-poppins font-bold text-[#D4F157] transition-all duration-500 hover:-translate-y-1 hover:bg-[#D4F157] hover:text-[#1a3a3a] hover:shadow-[0_12px_28px_rgba(212,241,87,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4F157] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1a3a3a] md:px-10 md:py-4 md:text-base"
+            >
+              <span className="relative h-5 overflow-hidden md:h-6">
+                <span className="block transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">VIEW OUR WORK</span>
+                <span aria-hidden="true" className="absolute left-0 top-full block text-[#1a3a3a] transition-transform duration-500 ease-[cubic-bezier(.2,.8,.2,1)] group-hover:-translate-y-full">VIEW OUR WORK&nbsp; →</span>
+              </span>
+            </a>
+          </div>
+        

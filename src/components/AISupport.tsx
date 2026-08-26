@@ -31,11 +31,11 @@ export default function AISupport() {
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
           <span className="text-[#E1E1D5]">Your newest team member </span>
           <br />
-          <span className="text-[#D4F157]">does not need a desk.</span>
+          <span className="text-[#D0D731]">does not need a desk.</span>
         </h2>
 
         {/* Yellow accent line */}
-        <div className="w-20 md:w-24 h-1 bg-[#D4F157] mb-10 md:mb-12" />
+        <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
 
         {/* Body Paragraphs */}
         <div className="space-y-6 md:space-y-8 mb-16 md:mb-20 max-w-3xl">
@@ -55,7 +55,7 @@ export default function AISupport() {
               className="bg-[#315332] rounded-2xl p-8 md:p-10 border border-gray-700/50 transition-all duration-300 hover:border-[#D4F157]"
             >
               {/* Category Label */}
-              <div className="text-xs md:text-sm font-poppins font-bold text-[#D4F157] tracking-widest uppercase mb-4 md:mb-6">
+              <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-4 md:mb-6">
                 {feature.category}
               </div>
 
@@ -75,7 +75,7 @@ export default function AISupport() {
         {/* CTA Button */}
         <a
           href="/services"
-          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
+          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
         >
           EXPLORE AI SUPPORT
         </a>

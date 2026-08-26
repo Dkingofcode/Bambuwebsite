@@ -211,122 +211,207 @@
 
 
 
+// 'use client';
+
+// //import Link from 'next/link';
+
+// export default function Footer() {
+//   return (
+//     <footer className="bg-[#052F23]">
+//       <div className="container-max max-w-7xl px-6 md:px-12 py-20 md:py-32 lg:py-40">
+//         {/* Top Section */}
+//         <div className="flex justify-between items-start mb-20 md:mb-24">
+//           <div>
+//             <h2 className="text-2xl md:text-3xl font-poppins font-bold text-[#E1E1D5]">BAMBU</h2>
+//           </div>
+//           {/* <div className="text-xs md:text-sm font-poppins font-bold text-gray-600 tracking-widest uppercase">
+//             Global Footer
+//           </div> */}
+//         </div>
+
+//         {/* Footer Copy Section */}
+//         <div className="mb-16 md:mb-20">
+//           {/* <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-4 md:mb-6">
+//             Footer Copy
+//           </div> */}
+//           <h3 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-[#E1E1D5] mb-6 md:mb-8">
+//             Bambu
+//           </h3>
+//           <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
+//             Creative work that moves businesses forward.
+//           </p>
+//         </div>
+
+//         {/* Navigation Links */}
+//         <div className="mb-12 md:mb-16">
+//           <div className="flex flex-wrap gap-4 md:gap-6">
+//             <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
+//             <a
+//               href="/"
+//               className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//             >
+//               Home
+//             </a>
+//             </div>
+
+//             <div className="border border-gray-600 rounded-4xl pt-3 px-4">
+//             <a
+//               href="/projects"
+//               className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//             >
+//               Work
+//             </a>
+//             </div>
+
+//             <div className="border border-gray-600 rounded-4xl pt-3 px-4">
+//             <a
+//               href="/services"
+//               className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//             >
+//               Services
+//             </a>
+//             </div>
+
+//             <div className="border border-gray-600 rounded-4xl pt-3 px-4">
+//             <a
+//               href="/about-us"
+//               className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//             >
+//               About
+//             </a>
+//             </div>
+
+//             <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
+//             <a
+//               href="/contacts"
+//               className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//             >
+//               Build With Us
+//             </a>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Social Links */}
+//         <div className="flex flex-wrap gap-4 md:gap-6">
+//           <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
+//           <a
+//             href="https://www.instagram.com"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//           >
+//             Instagram
+//           </a>
+//           </div>
+
+//           <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
+//           <a
+//             href="https://www.linkedin.com"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//           >
+//             LinkedIn
+//           </a>
+//           </div>
+
+//           <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
+//           <a
+//             href="https://twitter.com"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+//           >
+//             Twitter / X
+//           </a>
+//           </div>
+
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
+
+
+
+
+
+
+
+
 'use client';
+
+import { Link } from "react-router-dom";
 
 //import Link from 'next/link';
 
 export default function Footer() {
+  const menuLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about-us' },
+    { label: 'Work', href: '/projects' },
+    { label: 'Services', href: '/services' },
+  ];
+
+  const socialLinks = [
+    { label: 'Instagram', href: 'https://www.instagram.com' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com' },
+    { label: 'Twitter/X', href: 'https://twitter.com' },
+  ];
+
   return (
-    <footer className="bg-[#052F23]">
-      <div className="container-max max-w-7xl px-6 md:px-12 py-20 md:py-32 lg:py-40">
-        {/* Top Section */}
-        <div className="flex justify-between items-start mb-20 md:mb-24">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-poppins font-bold text-[#E1E1D5]">BAMBU</h2>
-          </div>
-          {/* <div className="text-xs md:text-sm font-poppins font-bold text-gray-600 tracking-widest uppercase">
-            Global Footer
-          </div> */}
-        </div>
-
-        {/* Footer Copy Section */}
-        <div className="mb-16 md:mb-20">
-          {/* <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-4 md:mb-6">
-            Footer Copy
-          </div> */}
-          <h3 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-[#E1E1D5] mb-6 md:mb-8">
-            Bambu
-          </h3>
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
-            Creative work that moves businesses forward.
-          </p>
-        </div>
-
-        {/* Navigation Links */}
-        <div className="mb-12 md:mb-16">
-          <div className="flex flex-wrap gap-4 md:gap-6">
-            <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
-            <a
-              href="/"
-              className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-            >
-              Home
-            </a>
-            </div>
-
-            <div className="border border-gray-600 rounded-4xl pt-3 px-4">
-            <a
-              href="/projects"
-              className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-            >
-              Work
-            </a>
-            </div>
-
-            <div className="border border-gray-600 rounded-4xl pt-3 px-4">
-            <a
-              href="/services"
-              className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-            >
-              Services
-            </a>
-            </div>
-
-            <div className="border border-gray-600 rounded-4xl pt-3 px-4">
-            <a
-              href="/about-us"
-              className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-            >
-              About
-            </a>
-            </div>
-
-            <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
-            <a
-              href="/contacts"
-              className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
+    <footer className="bg-[#052F23] text-[#E1E1D5]">
+      <div className="mx-auto max-w-[940px] px-8 py-96 md:px-16 md:py-14 lg:max-w-[1300px]">
+        <div className="grid grid-cols-2 gap-x-10 gap-y-10 md:grid-cols-[1fr_auto_auto] md:gap-28">
+          <div className="col-span-2 text-center md:col-span-1 md:text-left">
+            <Link to="/" className="inline-flex items-center gap-3" aria-label="Bambu home">
+              {/* <span aria-hidden="true" className="relative block h-12 w-10 overflow-hidden">
+                <span className="absolute left-0 top-0 h-8 w-9 -rotate-[28deg] rounded-[18px] bg-[#31563f]" />
+                <span className="absolute bottom-0 left-0 h-8 w-9 -rotate-[28deg] rounded-[18px] bg-[#d4e52b]" />
+              </span>
+              <span className="text-[40px] font-bold leading-none tracking-[-0.06em] text-[#f4f2ed]">Bambu</span> */}
+              <img src="/public/WHITE PRIMARY LOGO@4x.png" alt="Bambu Logo" className="h-12 w-auto" />
+            </Link>
+            <p className="mx-auto mt-5 max-w-[310px] text-[22px] leading-[1.28] tracking-[-0.02em] md:mx-0 md:text-[23px]">
+              Creative work that moves<br className="hidden md:block" /> businesses forward.
+            </p>
+            <div className="mx-auto mt-9 h-px w-full max-w-[545px] bg-[#f4f2ed] md:hidden" />
+            <Link
+              to="/contacts"
+              className="mt-5 hidden rounded-full bg-[#D0D731] text-[#052F23] px-7 py-2 text-[16px] font-bold text-[#003b2f] transition-colors hover:bg-[#e4f35a] md:inline-flex"
             >
               Build With Us
-            </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Social Links */}
-        <div className="flex flex-wrap gap-4 md:gap-6">
-          <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-          >
-            Instagram
-          </a>
+            </Link>
           </div>
 
-          <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-          >
-            LinkedIn
-          </a>
-          </div>
+          <nav aria-label="Footer menu" className="text-center md:text-left">
+            <h2 className="text-[21px] font-bold text-[#D0D731]">Menu</h2>
+            <ul className="mt-3 space-y-2 text-[22px] leading-[1.25]">
+              {menuLinks.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.href} className="transition-colors hover:text-[#d4e52b]">{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-          <div className="border border-gray-600 rounded-4xl pt-3 py-3 px-4">
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 border border-gray-600 text-[#E1E1D5] rounded-full hover:border-[#D0D731] hover:text-[#D0D731] transition-colors text-sm md:text-base font-medium"
-          >
-            Twitter / X
-          </a>
-          </div>
-
+          <nav aria-label="Footer social links" className="text-center md:text-left">
+            <h2 className="text-[21px] font-bold text-[#D0D731]">Socials</h2>
+            <ul className="mt-3 space-y-2 text-[22px] leading-[1.25]">
+              {socialLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-[#d4e52b]">{link.label}</a>
+                </li>
+              ))}
+            </ul>
+            <Link
+              to="/contacts"
+              className="mt-5 inline-flex rounded-full bg-[#d4e52b] px-7 py-2 text-[16px] font-bold text-[#003b2f] transition-colors hover:bg-[#e4f35a] md:hidden"
+            >
+              Build With Us
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>

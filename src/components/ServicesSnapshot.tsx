@@ -108,7 +108,7 @@ export default function ServicesSnapshot() {
         {/* CTA Button */}
         <a
           href="/services"
-          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
+          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
         >
           EXPLORE ALL SERVICES
         </a>
