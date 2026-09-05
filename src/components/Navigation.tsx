@@ -31,11 +31,12 @@ export default function Navigation() {
 
 
          <Link to="/" className="flex items-center gap-3">
-  <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg">
+  <div className="flex items-center justify-center w-12 h-12 ">
     <img
       className="w-8 h-10 object-contain"
       src="/ICON@4x.png"
-      alt="BAMBU Logo"
+     // src='/WHITE PRIMARY LOGO@4x.png'
+     alt="BAMBU Logo"
     />
   </div>
 

@@ -476,7 +476,7 @@ export default function BuildWithUsPage() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
             <span className="text-[#052F23]">Tell us what you are building. </span>
             <br />
-            <span className="text-[#D0D731]">We will help you shape what comes next.</span>
+            <span className="text-[#052F23]">We will help you shape what comes next.</span>
           </h1>
 
           {/* Yellow accent line */}

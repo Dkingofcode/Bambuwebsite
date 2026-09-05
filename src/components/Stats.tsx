@@ -112,8 +112,8 @@ export default function Stats() {
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h2 className="heading-lg max-w-4xl text-[#052F23]">
-            Everyone <span className="text-[#D0D731]">designs</span>. We shape how people feel{' '}
-            <span className="text-[#D0D731]">your</span> <span className="text-[#D0D731]">brand</span>.
+            Everyone <span className="">designs</span>. We shape how people feel{' '}
+            <span className="">your</span> <span className="">brand</span>.
           </h2>
            <p className="text-lg leading-relaxed max-w-4xl mt-6 text-[#052F23]">
             {/* We&apos;re a 22-person international branding agency team specialized in brand design, packaging and web
