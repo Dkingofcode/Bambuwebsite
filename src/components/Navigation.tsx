@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const sectionOffsets = {
-  '#home': { desktop: -55, mobile: -72},
+  '#home': { desktop: -55, mobile: -42},
   '#work': { desktop: -25, mobile: 5 },
   '#services': { desktop: -18, mobile: 10 },
   '#panders': { desktop: -24, mobile: 10 },
