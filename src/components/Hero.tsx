@@ -52,7 +52,7 @@ export default function BambuHero() {
   ];
 
   return (
-    <section id="home" className="flex min-h-[calc(100svh-90px)] items-center justify-center bg-[#052f23] px-0 py-23 sm:py-36 md:py-28 lg:py-32">
+    <section id="home" className="flex min-h-[calc(100svh-90px)] items-center justify-center bg-[#052f23] px-0 py-33 sm:py-36 md:py-28 lg:py-32">
       <div className="mx-auto  w-full max-w-[1260px] px-[18px]">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="mb-8 md:mb-10">

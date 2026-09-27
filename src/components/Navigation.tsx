@@ -73,7 +73,7 @@ const handleSectionNavigation = (
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden  items-center gap-0 lg:flex">
+        <div className="hidden items-center gap-0 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.name}
