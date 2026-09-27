@@ -62,8 +62,8 @@ const handleSectionNavigation = (
   ];
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#052f23]/95 backdrop-blur-md">
-      <div className="mx-auto flex min-h-[90px]   items-center justify-between px-[28px] lg:px-10">
+     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#052f23]/95 backdrop-blur-md">
+      <div className="mx-auto flex min-h-[90px] w-full max-w-[1220px] items-center justify-between px-4 lg:px-0">
         <Link to="#home" aria-label="Bambu home" className="flex items-center gap-3">
           <span aria-hidden="true" className="relative h-10 w-[34px] shrink-0">
             <span className="absolute left-0 top-1 h-5 w-[34px] -skew-y-[18deg] rounded-[14px_18px_14px_4px] bg-[#d0d731]/30" />
@@ -73,13 +73,13 @@ const handleSectionNavigation = (
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden items-center gap-0.5 lg:flex">
+        <div className="hidden  items-center gap-0 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href}
               onClick={(event) => handleSectionNavigation(event, link.href)}
-              className="rounded-[16px] px-4 py-3 text-[17px] font-extrabold tracking-[-0.01em] text-[#c4c0c0] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#d0d731] hover:text-[#052f23]"
+              className="rounded-[16px] px-4 py-3 text-[17px] font-extrabold tracking-[-0.01em] text-[#b3b3ae] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#d0d731] hover:text-[#052f23]"
             >
               {link.name}
             </Link>
@@ -124,12 +124,12 @@ const handleSectionNavigation = (
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden border-t border-white/10 bg-[#052f23]">
-          <div className="mx-auto flex w-full max-w-[1160px] flex-col gap-2 px-[28px] py-4">
+          <div className="mx-auto flex w-full max-w-[1260px] flex-col gap-2 px-4 py-4 lg:px-0">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="rounded-xl px-3 py-3 text-base font-bold text-[#e1e1d5] transition-colors hover:bg-[#d0d731] hover:text-[#052f23]"
+                className="rounded-xl px-3 py-3 text-base font-bold text-[#b3b3ae] transition-colors hover:bg-[#d0d731] hover:text-[#052f23]"
                 onClick={(event) => handleSectionNavigation(event, link.href)}
               >
                 {link.name}
