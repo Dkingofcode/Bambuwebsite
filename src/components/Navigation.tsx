@@ -1,125 +1,99 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type MouseEvent } from 'react';
 import {Link} from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-//import { Navigate } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const location  = useLocation();
-  const pathname = location.pathname;
-  const navigate = useNavigate();
+
+  const sectionOffsets = {
+  '#home': { desktop: -55, mobile: -72},
+  '#work': { desktop: -25, mobile: 5 },
+  '#services': { desktop: -18, mobile: 10 },
+  '#panders': { desktop: -24, mobile: 10 },
+  '#proof': { desktop: -24, mobile: 10 },
+  '#details': { desktop: -24, mobile: 10 },
+  '#contact': { desktop: -24, mobile: 8 },
+}
+
+
+const handleSectionNavigation = (
+  event: MouseEvent<HTMLAnchorElement>,
+  href: string,
+) => {
+  if (!href.startsWith('#')) return
+  
+      event.preventDefault()
+
+  const target = document.querySelector(href)
+
+  if (target) {
+    // const desktopOffset = sectionOffsets[href]?.desktop ?? 10
+    // const mobileOffset = sectionOffsets[href]?.mobile ?? 18
+     const offsetValues = sectionOffsets[href as keyof typeof sectionOffsets] ?? {
+    desktop: 10,
+    mobile: 18,
+  }
+  
+  const offset =
+    window.innerWidth < 768
+      ? offsetValues.mobile
+      : offsetValues.desktop
+
+ 
+ //   const offset = window.innerWidth < 768 ? mobileOffset : desktopOffset
+    const targetTop =
+      target.getBoundingClientRect().top + window.scrollY - offset
+
+    window.scrollTo({ top: targetTop, behavior: 'smooth' })
+  }
+
+    window.history.replaceState(null, '', href);
+    setIsOpen(false);
+  };
+
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about-us' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contacts', href: '/contacts' },
+    { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#services' },
+    { name: 'Work', href: '#work' },
+    { name: 'Panders', href: '#panders' },
+    { name: 'Proof', href: '#proof' },
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-[#052F23]/95 backdrop-blur-md z-50 border-b border-white/10">
-      <div className="container-max flex items-center justify-between py-4">
-        {/* Logo */}
-        {/* <Link to="/" className="flex items-center gap-2">
-        <img className='w-8 h-10' src='/ICON.png'  />
-          <div className="text-2xl font-poppins font-bold text-[#D0D731]">BAMBU</div>
-        </Link> */}
-
-
-         <Link to="/" className="flex items-center gap-3">
-  <div className="flex items-center justify-center w-12 h-12 ">
-    <img
-      className="w-8 h-10 object-contain"
-      src="/ICON@4x.png"
-     // src='/WHITE PRIMARY LOGO@4x.png'
-     alt="BAMBU Logo"
-    />
-  </div>
-
-  <div className="text-2xl font-poppins font-bold text-[#E1E1D5]">
-    BAMBU
-  </div>
-</Link> 
-
-
-
-{/* 
-
-<Link to="/" className="flex items-center gap-3">
-  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg">
-    <img
-      className="w-8 h-10 object-contain"
-      src="/ICON.png"
-      alt="BAMBU Logo"
-    />
-  </div>
-
-  <div className="text-2xl font-poppins font-bold text-[#D0D731]">
-    BAMBU
-  </div>
-</Link> */}
-
-
-
-
-{/* <Link to="/" className="flex items-center gap-3 group">
-  <div
-    className="
-      flex items-center justify-center
-      w-14 h-14
-      rounded-2xl
-      bg-gradient-to-br
-      from-white/20
-      to-white/5
-      border border-white/20
-      backdrop-blur-md
-      shadow-lg
-      transition-all duration-300
-      group-hover:scale-105
-    "
-  >
-    <img
-      className="w-8 h-10 object-contain"
-      src="/ICON.png"
-      alt="BAMBU Logo"
-    />
-  </div>
-
-  <div className="text-2xl font-poppins font-bold text-[#D0D731]">
-    BAMBU
-  </div>
-</Link> */}
-
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#052f23]/95 backdrop-blur-md">
+      <div className="mx-auto flex min-h-[90px]   items-center justify-between px-[28px] lg:px-10">
+        <Link to="#home" aria-label="Bambu home" className="flex items-center gap-3">
+          <span aria-hidden="true" className="relative h-10 w-[34px] shrink-0">
+            <span className="absolute left-0 top-1 h-5 w-[34px] -skew-y-[18deg] rounded-[14px_18px_14px_4px] bg-[#d0d731]/30" />
+            <span className="absolute bottom-1 left-0 h-5 w-[34px] -skew-y-[18deg] rounded-[14px_18px_14px_4px] bg-[#d0d731]" />
+          </span>
+          <span className="font-poppins text-[22px] font-extrabold leading-none tracking-[0.02em] text-[#e1e1d5]">BAMBU</span>
+        </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => {
-            const active = pathname === link.href;
-            return (
-              <Link
-                key={link.name}
-                to={link.href}
-                className={`relative transition-colors duration-300 font-medium group ${
-                  active ? 'text-[#D0D731]' : 'text-[#E1E1D5] hover:text-[#D0D731]'
-                }`}
-              >
-                {link.name}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-[#D0D731] transition-all duration-300 ${
-                  active ? 'w-full' : 'w-0 group-hover:w-full'
-                }`}></span>
-              </Link>
-            );
-          })}
-          <button onClick={() => navigate("/contacts")}  className="btn-primary bg-[#D0D731]">Start a project</button>
+        <div className="hidden items-center gap-0.5 lg:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.href}
+              onClick={(event) => handleSectionNavigation(event, link.href)}
+              className="rounded-[16px] px-4 py-3 text-[17px] font-extrabold tracking-[-0.01em] text-[#c4c0c0] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#d0d731] hover:text-[#052f23]"
+            >
+              {link.name}
+            </Link>
+          ))}
+          <Link to="#contact" onClick={(event) => handleSectionNavigation(event, '#contact')} className="ml-2 inline-flex min-h-[48px] items-center justify-center rounded-[16px] bg-[#d0d731] px-6 text-[16px] font-extrabold text-[#052f23] transition-transform duration-200 hover:-translate-y-0.5">
+            Build with us
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="lg:hidden inline-grid h-11 w-11 place-content-center gap-1.5 text-[#e1e1d5]"
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -149,24 +123,21 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#11211F] border-t border-white/10">
-          <div className="container-max flex flex-col gap-4 py-4">
-            {navLinks.map((link) => {
-              const active = pathname === link.href;
-              return (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className={`transition-colors duration-300 ${
-                    active ? 'text-[#D0D731] font-bold' : 'text-[#E1E1D5] hover:text-[#D0D731]'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
-            <button onClick={() => navigate("/contacts")}  className="btn-primary bg-[#D0D731] w-full">Start a project</button>
+        <div className="lg:hidden border-t border-white/10 bg-[#052f23]">
+          <div className="mx-auto flex w-full max-w-[1160px] flex-col gap-2 px-[28px] py-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="rounded-xl px-3 py-3 text-base font-bold text-[#e1e1d5] transition-colors hover:bg-[#d0d731] hover:text-[#052f23]"
+                onClick={(event) => handleSectionNavigation(event, link.href)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link to="#contact" onClick={(event) => handleSectionNavigation(event, '#contact')} className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-[16px] bg-[#d0d731] px-6 text-base font-extrabold text-[#052f23]">
+              Build with us
+            </Link>
           </div>
         </div>
       )}

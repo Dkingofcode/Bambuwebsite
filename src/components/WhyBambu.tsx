@@ -1,43 +1,25 @@
 export default function WhyBambu() {
   return (
-    <section className="bg-[#E1E1D5] py-20 md:py-32 lg:py-40">
-      <div className="container-max max-w-7xl px-6 md:px-12">
-        {/* Section Label */}
-        <div className="mb-12 md:mb-16">
-          <span className="text-[#315332] text-xs md:text-sm font-poppins font-bold tracking-widest uppercase">
-            Why Bambu
-          </span>
+    <section id="why-bambu" className="bg-[#e1e1d5] py-16 text-[#082f25] md:py-24">
+      <div className="mx-auto grid w-full max-w-[1260px] gap-8 px-[18px] md:gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div>
+          <p className="mb-4 text-sm font-poppins font-extrabold leading-tight text-[#315332]">Why Bambu</p>
+          <h2 className="max-w-[620px] text-[clamp(32px,5vw,62px)] font-poppins font-black leading-[1.03] tracking-[-0.038em]">
+            Everything your audience sees should point in the same direction.
+          </h2>
         </div>
 
-        {/* Main Headline */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-[#052F23] mb-8 md:mb-10 leading-tight">
-          Everything your audience sees should point in the same direction.
-        </h2>
-
-          {/* Yellow accent line */}
-          <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
-
-        {/* Subheading with Yellow Highlight */}
-        <p className="text-lg md:text-xl text-[#052F23] mb-2 md:mb-16 leading-relaxed max-w-3xl">
-          <span className="px-1">Your identity, website, campaign, content, packaging and customer experience</span> should feel like the same business.
-          That&apos;s where Bambu comes in. We connect the thinking and the execution, so the brand shows up clearly wherever people meet it.
-        </p>
-
-        {/* Body Paragraphs */}
-        <div className="space-y-2 md:space-y-8 mb-12 md:mb-16 max-w-3xl">
-         
-          <p className="text-base md:text-lg text-[#052F23] leading-relaxed font-normal">
-            From the first strategic question to the final deliverable, every part is built to support the next.
+        <div className="max-w-[620px] pt-1 lg:pt-8">
+          <p className="text-[17px] leading-[1.7] text-[rgba(8,47,37,0.72)]">
+            Your identity, website, campaign, packaging, content and customer experience should feel like the same business. We connect the thinking and the execution so people meet a clearer brand wherever they find you.
           </p>
+          <a
+            href="#services"
+            className="mt-6 inline-flex w-fit border-b-2 border-[#d0d731] pb-1 text-[#082f25] font-extrabold transition-colors hover:text-[#315332]"
+          >
+            See services
+          </a>
         </div>
-
-        {/* CTA Button */}
-        <a
-          href="/projects"
-          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
-        >
-          SEE HOW WE WORK
-        </a>
       </div>
     </section>
   );

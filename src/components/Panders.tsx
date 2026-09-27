@@ -1,46 +1,37 @@
 export default function ThePanders() {
+  const principles = [
+    ['We deliver clearly.', 'Outputs, files, documentation and handover are organised for the team.'],
+    ['We watch what happens next.', 'We pay attention to how customers respond and how the team uses the work.'],
+    ['We spot the next move.', 'Campaigns, content, print, digital, events or AI support can build from the first project.'],
+  ];
+
   return (
-    <section className="bg-[#052F23] py-20 md:py-32 lg:py-40">
-      <div className="container-max max-w-7xl px-6 md:px-12">
-        {/* Section Label */}
-        <div className="mb-12 md:mb-16">
-          <span className="text-[#D0D731] text-xs md:text-sm font-poppins font-bold tracking-widest uppercase">
-            The Panders
-          </span>
-        </div>
-
-        {/* Main Headline */}
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
-          <span className="text-[#E1E1D5]">You are not hiring an agency. </span>
-          <br />
-          <span className="text-[#D0D731]">You are gaining a creative partner.</span>
+    <section id="panders" className="bg-[#052F23] py-16 text-[#e6e3d2] md:py-24">
+      <div className="mx-auto w-full max-w-[1260px] px-4 md:px-6">
+        <p className="mb-5 text-base font-poppins font-extrabold leading-tight text-[#d0d731]">The Panders</p>
+        <h2 className="max-w-[720px] text-[clamp(44px,7vw,78px)] font-poppins font-black leading-[1.02] tracking-[-0.055em]">
+          You are gaining <span className="text-[#d0d731]">a creative partner.</span>
         </h2>
+        <p className="mt-8 max-w-[900px] text-[clamp(22px,2.5vw,30px)] leading-[1.42] text-[#9ca19d]">
+          Every business that builds with us becomes part of our community. We stay curious after delivery and keep looking for the next stronger expression, smarter system and better opportunity.
+        </p>
 
-        {/* Yellow accent line */}
-        <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
-
-        {/* Body Paragraphs */}
-        <div className="space-y-6 md:space-y-8 mb-12 md:mb-16 max-w-3xl">
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
-            Every business that builds with us becomes part of our community. We call them Panders.
-          </p>
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
-            We stay curious after delivery. We keep looking for the next opportunity, the stronger expression, the smarter system and the idea that can move the brand forward.
-          </p>
+        <div className="mt-10 rounded-[24px] border border-[#315c50] bg-[#10362b] px-7 py-10 md:px-12 md:py-12">
+          <h3 className="max-w-[850px] text-[clamp(42px,6vw,68px)] font-poppins font-black leading-[1.02] tracking-[-0.055em]">
+            The project may end. The partnership does not.
+          </h3>
+          <div className="mt-8 grid grid-cols-1 gap-8 border-t border-[#315c50] pt-5 md:grid-cols-3 md:gap-4">
+            {principles.map(([title, description]) => (
+              <div key={title} className="border-t border-[#315c50] pt-4 md:border-t-0 md:pr-6">
+                <h4 className="text-[19px] font-poppins font-black leading-tight">{title}</h4>
+                <p className="mt-3 text-[19px] leading-[1.55] text-[#9ca19d]">{description}</p>
+              </div>
+            ))}
+          </div>
+          <a href="#contact" className="mt-7 flex min-h-[60px] items-center justify-center rounded-full bg-[#d0d731] px-5 text-base font-poppins font-black text-[#052f23] transition-colors duration-200 hover:bg-[#e0e85b]">
+            Join the Panders
+          </a>
         </div>
-
-        {/* Partnership Statement */}
-        <h3 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-[#E1E1D5] mb-12 md:mb-16 leading-tight">
-          The project may end. The partnership does not.
-        </h3>
-
-        {/* CTA Button */}
-        <a
-          href="/contacts"
-          className="inline-block px-8 md:px-10 py-3 md:py-4 bg-[#D0D731] text-[#052F23] font-poppins font-bold rounded-4xl text-sm md:text-base transition-all duration-300 hover:bg-[#E0F77D]"
-        >
-          JOIN THE PANDERS
-        </a>
       </div>
     </section>
   );

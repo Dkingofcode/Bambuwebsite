@@ -1,61 +1,39 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function FinalCTA() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [name, setName] = useState('');
+  const [contact, setContact] = useState('');
+  const [needs, setNeeds] = useState('');
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  const enquiry = `mailto:contact@thebambuagency.org?subject=Build with Bambu${name ? ` - ${name}` : ''}&body=${encodeURIComponent(needs ? `${name}\n${contact}\n\n${needs}` : `${name}\n${contact}`)}`;
 
   return (
-    <section className="bg-[#ededda] py-20 md:py-28 relative overflow-hidden">
-      <div className="container-max">
-        <div className="relative max-w-5xl mx-auto">
-          {/* Main Card */}
-          <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="bg-white rounded-2xl p-12 md:p-16 border border-gray-100 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div className="space-y-8">
-                <h2 className="heading-lg text-[#052F23]">
-                  Let&apos;s make the work they&apos;ll copy.
-                </h2>
+    <section id="contact" className="bg-[#e1e1d5] py-16 text-[#082f25] md:py-24">
+      <div className="mx-auto w-full max-w-[1260px] px-4 md:px-6">
+        <p className="mb-5 text-base font-poppins font-extrabold">Build with Bambu</p>
+        <h2 className="max-w-[800px] text-[clamp(48px,7vw,82px)] font-poppins font-black leading-[0.98] tracking-[-0.06em]">Tell us what you are building.</h2>
 
-                {/* CTA Link with Arrow */}
-                <a
-                  href="/contact-us/"
-                  className="inline-flex items-center gap-4 px-8 py-4 bg-[#E7B621] text-[#052F23] rounded-full font-poppins font-bold hover:bg-[#E0F77D] transition-all duration-300 group"
-                >
-                  <span>Talk to an expert now</span>
-                  <div className="group-hover:translate-x-2 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="m12 5 7 7-7 7"></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
+        <div className="mt-10 grid gap-6 lg:grid-cols-[1.08fr_1fr] lg:items-start">
+          <form onSubmit={(event) => { event.preventDefault(); window.location.href = enquiry; }} className="rounded-[26px] border border-[rgba(8,47,37,0.16)] bg-[#f1f0e7] p-6 md:p-7">
+            <label className="block text-lg font-poppins font-black" htmlFor="contact-name">Name / Company</label>
+            <input id="contact-name" value={name} onChange={(event) => setName(event.target.value)} placeholder="Your name and company" className="mt-2 w-full rounded-[18px] border border-[rgba(8,47,37,0.18)] bg-[#faf9f2] px-4 py-4 text-lg font-extrabold outline-none placeholder:text-[#79908a] focus:border-[#d0d731]" required />
+            <label className="mt-5 block text-lg font-poppins font-black" htmlFor="contact-detail">Email / Phone</label>
+            <input id="contact-detail" value={contact} onChange={(event) => setContact(event.target.value)} placeholder="email@example.com or +234..." className="mt-2 w-full rounded-[18px] border border-[rgba(8,47,37,0.18)] bg-[#faf9f2] px-4 py-4 text-lg font-extrabold outline-none placeholder:text-[#79908a] focus:border-[#d0d731]" required />
+            <label className="mt-5 block text-lg font-poppins font-black" htmlFor="contact-needs">What do you need help with?</label>
+            <textarea id="contact-needs" value={needs} onChange={(event) => setNeeds(event.target.value)} placeholder="Brand identity, website, event branding, content..." className="mt-2 min-h-[132px] w-full resize-y rounded-[18px] border border-[rgba(8,47,37,0.18)] bg-[#faf9f2] px-4 py-4 text-lg font-extrabold outline-none placeholder:text-[#79908a] focus:border-[#d0d731]" required />
+            <button type="submit" className="mt-5 min-h-[60px] w-full rounded-full bg-[#d0d731] px-5 text-base font-poppins font-black transition-colors hover:bg-[#e0e85b]">Prepare enquiry</button>
+          </form>
 
-              {/* Right Images */}
-              <div className="flex gap-4">
-                <img
-                  src="https://markaworks.com/wp-content/uploads/2025/10/Stat-1.png"
-                  alt="Work Example 1"
-                  className="flex-1 rounded-lg object-cover h-64 md:h-80"
-                />
-                <img
-                  src="https://markaworks.com/wp-content/uploads/2025/10/Stat-2.png"
-                  alt="Work Example 2"
-                  className="flex-1 rounded-lg object-cover h-64 md:h-80"
-                />
-              </div>
+          <aside className="rounded-[28px] bg-[#053529] p-7 text-[#e6e3d2] md:p-8">
+            <h3 className="text-[30px] font-poppins font-black tracking-[-0.04em]">Contact Bambu</h3>
+            <p className="mt-1 max-w-[560px] text-[20px] leading-[1.55] text-[#b8c5ba]">Keep the conversion path visible. A good mobile footer should help people act quickly, not make them scroll through empty space.</p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <button type="button" onClick={() => navigator.clipboard?.writeText('contact@thebambuagency.org')} className="rounded-full bg-[#d0d731] px-5 py-3 font-poppins font-black text-[#053529]">Copy email address</button>
+              <a href="mailto:contact@thebambuagency.org" className="rounded-full border border-[#d0d731] px-5 py-3 font-poppins font-black text-[#d0d731]">Send email</a>
             </div>
-
-            {/* Decorative Pattern */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[#E7B621] rounded-full opacity-10 blur-3xl -z-10" />
-            <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#E7B621] rounded-full opacity-5 blur-3xl -z-10" />
-          </div>
+          </aside>
         </div>
       </div>
     </section>
