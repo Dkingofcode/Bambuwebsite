@@ -1,14 +1,6 @@
 import Navigation from '../components/Navigation';
-//import PortfolioCarousel from '../components/PortfolioCarousel';
-//import ServiceSlides from '../components/ServiceSlides';
-//import FAQ from '../components/FAQ';
 import ServicesOverview from '../components/ServicesOverview';
-import StrategyBrandService from '../components/StrategyBrandService';
-import DigitalMarketingService from '../components/DigitalMarketingService';
-import AIBusinessSupport from '../components/AIBusinessSupport';
-//import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
-import ProductionService from '../components/ProductionService';
 
 export const metadata = {
   title: 'Services | Bambu',
@@ -20,11 +12,6 @@ export default function ServicesPage() {
     <main>
       <Navigation />
       <ServicesOverview />
-      <StrategyBrandService />
-      <DigitalMarketingService />
-      <ProductionService />
-      <AIBusinessSupport />
-
       <Footer />
     </main>
   );

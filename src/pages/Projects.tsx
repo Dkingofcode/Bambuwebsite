@@ -1,55 +1,7 @@
-// import Navigation from '../components/Navigation';
-// import PortfolioShowcase from '../components/PortfolioShowcase';
-// //import Testimonials from '../components/Testimonials';
-// import Footer from '../components/Footer';
-
-// export const metadata = {
-//   title: 'Projects | MarkaWorks',
-//   description: 'Explore our portfolio of transformative branding projects.',
-// };
-
-// export default function ProjectsPage() {
-//   return (
-//     <main>
-//       <Navigation />
-      
-//       {/* Hero Section */}
-//       <section className="bg-[#052F23] py-20 md:py-28">
-//         <div className="container-max">
-//           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-white mb-6">
-//             Our <span className="text-[#E7B621]">Projects</span>
-//           </h1>
-//           <p className="text-xl text-gray-400 max-w-2xl">
-//             Explore the transformative work we&apos;ve done for leading brands across industries.
-//           </p>
-//         </div>
-//       </section>
-
-//       {/* Portfolio Showcase */}
-//       <PortfolioShowcase />
-
-//       {/* Testimonials */}
-//       {/* <Testimonials /> */}
-
-//       <Footer />
-//     </main>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
 import Navigation from '../components/Navigation';
 //import Testimonials from '../components/Testimonials';
 //import FinalCTA from '../components/FinalCTA';
+//import Work from "../components/Work";
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -58,167 +10,81 @@ export const metadata = {
 };
 
 export default function WorkPage() {
-  const caseStudies = [
-    {
-      name: 'La Mama Coffee',
-      service: 'Strategy & Brand',
-      outcome: 'Established specialty coffee brand with cohesive identity and market positioning.',
-    },
-    {
-      name: 'Holme Fragrance',
-      service: 'Digital & Brand',
-      outcome: 'Luxury fragrance brand with immersive digital experience and premium packaging.',
-    },
-    {
-      name: 'Bars Nutrition',
-      service: 'Strategy & Marketing',
-      outcome: 'Sports nutrition brand with targeted campaigns reaching 50K+ health-conscious consumers.',
-    },
-    {
-      name: 'Rauph Luxury',
-      service: 'Brand & Production',
-      outcome: 'High-end brand with comprehensive visual identity and production ecosystem.',
-    },
-    {
-      name: 'SkinDeep Beauty',
-      service: 'Digital & Campaign',
-      outcome: 'Beauty tech startup with 5x increase in customer engagement through digital experiences.',
-    },
-    {
-      name: 'Yu Tea',
-      service: 'Full System',
-      outcome: 'Premium tea brand with complete brand system, digital presence, and 3K+ new customers.',
-    },
-  ];
+ const projects = [
+  // {
+  //   client: 'ShopInverse',
+  //   category: 'Identity · Packaging · Production',
+  //   image: '',
+  //   alt: 'ShopInverse branded campaign and graduation materials',
+  // },
+  {
+    client: 'Votelina',
+    category: 'Event branding · 2025',
+    image: './public/work-votelina.jpg',
+    alt: 'Graduation ceremony identity materials and certificate presentation',
+    description: 'A coordinated set of event materials designed to make a milestone feel considered from stage to certificate.'
+  },
+  {
+    client: 'Khynetic',
+    category: 'Studio direction · 2024',
+    image: './public/work-khynetic.jpg',
+    alt: 'Brighter future campaign artwork in green and lime',
+    description: 'A bold visual direction that gives an animation studio more energy, character and room to move.'
+  },
+]
 
   return (
     <main>
       <Navigation />
+      <section aria-labelledby="work-preview-title" className="bg-[#051d18] py-16 text-[#edf5f0] md:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-[1260px] px-4 md:px-6 lg:px-0">
+        <div className="flex items-end justify-between gap-8">
+          <div>
+            <p className="mb-5 text-sm font-bold text-[#b5f536]">Selected work</p>
+            <h2 id="work-preview-title" className="text-[clamp(48px,7vw,78px)] font-medium leading-[1.02] tracking-[-0.055em]">
+              Work you can see and use
+            </h2>
+            <p className='pt-10'>Brand identities, packaging, event materials and creative direction made for real businesses.</p>
+          </div>
+          {/* <a href="#contact" className="mb-2 hidden shrink-0 text-base text-[#b5f536] transition-opacity hover:opacity-70 md:inline-flex md:items-center md:gap-2">
+            View all work <span aria-hidden="true" className="text-xl">→</span>
+          </a> */}
+        </div>
+
+        <article className="mt-12 overflow-hidden bg-[#0a211c] md:mt-14">
+          <img src="./public/work-shopinverse.jpg" alt="Bambu branded campaign and graduation materials" className="h-[360px] w-full object-cover object-center md:h-[560px] lg:h-[680px]" />
+          <div className="border-t  border-white/20 py-5 md:flex md:items-center md:justify-between">
+            {/* <div className="border border-red-500 flex items-center justify-between gap-4"> */}
+                  <p className="text-sm font-bold text-[#b5f536]">Identity + Packaging · 2025</p>
+                  <span aria-hidden="true" className="text-2xl text-[#b5f536]">↗</span>
+                {/* </div> */}
+            
+            {/* <p className="text-sm font-bold text-[#b5f536]">Identity · Packaging · Production</p>
+            <p className="mt-2 text-2xl md:mt-0"> <span aria-hidden="true" className="ml-3 text-[#b5f536]">↗</span></p> */}
+          </div>
+          <h3 className="mt-3 text-3xl font-medium tracking-[-0.04em]">ShopInverse</h3>
+          <p>A brand and packaging system across bags, envelopes, stationery, tees and customer-facing materials.</p>
+        </article>
+
+        <div className="mt-14 grid gap-8 md:grid-cols-2 md:gap-7">
+          {projects.map((project) => (
+            <article key={project.client}>
+              <img src={project.image} alt={project.alt} className="h-[300px] w-full object-cover object-left md:h-[390px]" />
+              <div className="mt-5 border-t border-white/25 pt-5">
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-sm font-bold text-[#b5f536]">{project.category}</p>
+                  <span aria-hidden="true" className="text-2xl text-[#b5f536]">↗</span>
+                </div>
+                <h3 className="mt-3 text-3xl font-medium tracking-[-0.04em]">{project.client}</h3>
+                <p>{project.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
       
-      {/* Work Hero Section */}
-      <section className="bg-[#052F23] py-20 md:py-32 lg:py-40">
-        <div className="container-max max-w-7xl px-6 md:px-12">
-          {/* Section Label */}
-          <div className="mb-12 md:mb-16">
-            <span className="text-[#D0D731] text-xs md:text-sm font-poppins font-bold tracking-widest uppercase">
-              Work
-            </span>
-          </div>
-
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
-            <span className="text-[#E1E1D5]">Different businesses. </span>
-            <br />
-            <span className="text-[#D0D731]">Different problems. </span>
-            <br />
-            <span className="text-[#E1E1D5]">Thoughtful creative responses.</span>
-          </h1>
-
-          {/* Yellow accent line */}
-          <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
-
-          {/* Body Text */}
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed max-w-3xl font-normal">
-            Every case study should show the challenge, the thinking, what Bambu built and what changed.
-          </p>
-        </div>
-      </section>
-
-      {/* Case Study Structure & Format */}
-      <section className="bg-[#052F23] py-16 md:py-20">
-        <div className="container-max max-w-7xl px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {/* Case Study Structure
-            <div className="bg-[#315332] rounded-lg p-8 md:p-10">
-              <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-6 md:mb-8">
-                Case Study Structure
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-[#D0D731] font-bold text-sm md:text-base">01 · The business context</p>
-                </div>
-                <div>
-                  <p className="text-[#D0D731] font-bold text-sm md:text-base">02 · The problem</p>
-                </div>
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">03 · The strategic direction</p>
-                </div>
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">04 · What we built</p>
-                </div>
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">05 · The result</p>
-                </div>
-              </div>
-            </div> */}
-
-            {/* Project Card Format
-            <div className="bg-[#315332] rounded-lg p-8 md:p-10">
-              <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-6 md:mb-8">
-                Project Card Format
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">Project name</p>
-                </div>
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">Service category</p>
-                </div>
-                <div>
-                  <p className="text-[#E1E1D5] font-semibold text-sm md:text-base">One-line outcome</p>
-                </div>
-                <div>
-                  <p className="text-gray-400 font-semibold text-sm md:text-base">View case study →</p>
-                </div>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Grid */}
-      <section className="bg-[#E1E1D5] py-20 md:py-32 lg:py-40">
-        <div className="container-max max-w-7xl px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {caseStudies.map((study, idx) => (
-              <div
-                key={idx}
-                className="bg-[#E1E1D5] border border-gray-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
-              >
-                {/* Image Area */}
-                <div className="relative bg-gradient-to-br from-[#D0D731] via-[#052F23] to-[#0f2f2f] aspect-video flex items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-gray-400 text-sm md:text-base font-poppins font-bold">{study.service}</p>
-                  </div>
-                </div>
-
-                {/* Card Content */}
-                <div className="p-6 md:p-8">
-                  <h3 className="text-xl md:text-2xl font-poppins font-bold text-[#052F23] mb-3 md:mb-4">
-                    {study.name}
-                  </h3>
-                  <p className="text-base text-gray-700 leading-relaxed mb-4 md:mb-6">
-                    {study.outcome}
-                  </p>
-                  <a
-                    href="#"
-                    className="text-[#D0D731] hover:text-[#052F23] font-semibold text-sm md:text-base transition-colors"
-                  >
-                    View case study →
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      {/* <Testimonials /> */}
-
-      {/* Final CTA */}
-      {/* <FinalCTA /> */}
-
+      
       <Footer />
     </main>
   );

@@ -1,74 +1,73 @@
-export default function ServicesOverview() {
-  const serviceGroups = [
-    {
-      label: 'BUILD',
-      title: 'Strategy & Brand',
-      description: 'Clarity, identity and communication systems that make the business easier to understand and remember.',
-    },
-    {
-      label: 'LAUNCH',
-      title: 'Marketing & Content',
-      description: 'Campaigns and content designed to earn attention and move the right audience to action.',
-    },
-    {
-      label: 'GROW',
-      title: 'Digital & AI',
-      description: 'Digital experiences and practical automation that make the business easier to discover, use and run.',
-    },
-    {
-      label: 'SHOW UP',
-      title: 'Production',
-      description: 'Film, print, animation, merchandise and events brought into the real world with consistency.',
-    },
-  ];
+const serviceGroups = [
+  {
+    number: '01',
+    title: 'Brand strategy',
+    description: 'We get clear on your audience, position and purpose so every decision has a direction.',
+    items: ['Research & discovery', 'Positioning', 'Brand architecture', 'Messaging strategy'],
+  },
+  {
+    number: '02',
+    title: 'Brand identity',
+    description: 'We turn that strategy into a distinctive visual and verbal world people remember.',
+    items: ['Logo & identity design', 'Visual systems', 'Brand voice', 'Guidelines', 'Brand stewardship'],
+  },
+  {
+    number: '03',
+    title: 'Print, packaging & events',
+    description: 'We design and produce packaging, printed materials, merchandise and event branding people can hold and experience.',
+    items: ['Print production', 'Packaging & merchandise', 'Event materials', 'Event branding'],
+  },
+  {
+    number: '04',
+    title: 'Website & digital',
+    description: 'We design websites, landing pages and digital experiences that help people understand and choose you.',
+    items: ['Web design', 'Landing pages', 'Digital products', 'Content systems'],
+  },
+  {
+    number: '05',
+    title: 'Campaign & marketing',
+    description: 'We create campaigns, content plans and social media systems that put your brand in front of people.',
+    items: ['Campaign direction', 'Social systems', 'Content strategy', 'Launch support'],
+  },
+  {
+    number: '06',
+    title: 'Creative partnership',
+    description: 'Ongoing strategy and execution for teams that need one clear creative partner over time.',
+    items: ['Creative direction', 'Campaign support', 'Design retainers', 'Brand stewardship'],
+  },
+];
 
+export default function ServicesPageContent() {
   return (
-    <section className="bg-[#052F23] py-20 md:py-32 lg:py-40">
-      <div className="container-max max-w-7xl px-6 md:px-12">
-        {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight mb-8 md:mb-10">
-          <span className="text-[#E1E1D5]">Create services built </span>
-          <br />
-          <span className="text-[#D0D731]">around the business.</span>
-        </h1>
+    <section className="bg-[#0b211b] px-6 pb-24 pt-[150px] text-[#edf5f0] md:px-10 lg:px-16 lg:pb-32 lg:pt-[166px]">
+      <div className="mx-auto max-w-[1260px]">
+        <header className="max-w-[920px] border-b border-[#7d9c90]/35 pb-24 lg:pb-28">
+          <p className="mb-10 text-sm font-semibold text-[#b5f536]">Services</p>
+          <h1 className="max-w-[1100px] text-8xl font-medium leading-[0.98] tracking-[-0.005em]">What we can do for your business.</h1>
+          <p className="mt-8 max-w-[760px] text-sm leading-[1.45] text-[#bdd0c7] md:text-xl">Brand identity, websites, campaigns, print production, event branding and practical business support — planned and made together.</p>
+        </header>
 
-        {/* Yellow accent line */}
-        <div className="w-20 md:w-24 h-1 bg-[#D0D731] mb-10 md:mb-12" />
-
-        {/* Body Paragraphs */}
-        <div className="space-y-6 md:space-y-8 mb-16 md:mb-20 max-w-4xl">
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
-            Each service can stand on its own. The strongest results happen when the right services work together.
-          </p>
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed font-normal">
-            We can help you clarify the strategy, build the identity, create the platform, launch the campaign, produce the experience and strengthen the systems behind it.
-          </p>
-        </div>
-
-        {/* Service Groups Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {serviceGroups.map((group, idx) => (
-            <div
-              key={idx}
-              className="bg-[#315332] rounded-lg p-8 md:p-10 border border-gray-700/50 transition-all duration-300 hover:border-[#D0D731]"
-            >
-              {/* Label */}
-              <div className="text-xs md:text-sm font-poppins font-bold text-[#D0D731] tracking-widest uppercase mb-4 md:mb-6">
-                {group.label}
+        <div>
+          {serviceGroups.map((service) => (
+            <article
+  key={service.number}
+  className="grid gap-10 border-b border-[#7d9c90]/35 py-16 md:grid-cols-[70px_minmax(0,1fr)_minmax(390px,0.95fr)] md:gap-x-5 md:gap-y-12 md:py-16 lg:grid-cols-[100px_minmax(0,1fr)_minmax(520px,0.9fr)] lg:gap-x-6 lg:gap-y-12 lg:py-[68px]"
+>
+              <p className="text-sm font-medium text-[#b5f536]">{service.number}</p>
+              <div>
+                <h2 className="text-4xl font-normal leading-[1.04] tracking-[-0.055em]">{service.title}</h2>
+                <p className="mt-7 max-w-[370px] text-base text-sm leading-[1.45] text-[#bdd0c7] md:text-sm">{service.description}</p>
               </div>
-
-              {/* Title */}
-              <h3 className="text-2xl md:text-3xl font-poppins font-bold text-[#E1E1D5] mb-4 md:mb-6">
-                {group.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-400 leading-relaxed text-base">
-                {group.description}
-              </p>
-            </div>
+              <ul className="w-96 border-t border-[#7d9c90]/20 lg:justify-self-end">
+                {service.items.map((item) => (
+                  <li key={item} className="border-b border-[#7d9c90]/20 py-4 text-base text-[#d6e3dd] md:text-sm">{item}</li>
+                ))}
+              </ul>
+            </article>
           ))}
         </div>
+
+        <a href="#contact" className="mt-14 inline-flex items-center gap-3 text-base font-semibold text-[#b5f536] transition-transform hover:translate-x-1">Discuss your project <span aria-hidden="true" className="text-xl">→</span></a>
       </div>
     </section>
   );

@@ -10,9 +10,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       {/* Example extra route */}
-       <Route path="/about-us" element={<About />} /> 
-       <Route path="/projects" element={<Projects />} /> 
        <Route path="/services" element={<Services />} /> 
+       <Route path="/work" element={<Projects />} /> 
+       <Route path="/about-us" element={<About />} /> 
        <Route path="/contacts" element={<Contacts />} /> 
     </Routes>
   )
