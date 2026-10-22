@@ -55,14 +55,14 @@ const projects = [
   {
     client: 'Votelina',
     category: 'Event branding · 2025',
-    image: './public/work-votelina.jpg',
+    image: './work-votelina.jpg',
     alt: 'Graduation ceremony identity materials and certificate presentation',
     description: 'A coordinated set of event materials designed to make a milestone feel considered from stage to certificate.'
   },
   {
     client: 'Khynetic',
     category: 'Studio direction · 2024',
-    image: './public/work-khynetic.jpg',
+    image: './work-khynetic.jpg',
     alt: 'Brighter future campaign artwork in green and lime',
     description: 'A bold visual direction that gives an animation studio more energy, character and room to move.'
   },
@@ -85,7 +85,7 @@ export default function WorkPreview() {
         </div>
 
         <article className="mt-12 overflow-hidden bg-[#0a211c] md:mt-14">
-          <img src="./public/work-shopinverse.jpg" alt="Bambu branded campaign and graduation materials" className="h-[360px] w-full object-cover object-center md:h-[560px] lg:h-[680px]" />
+          <img src="./work-shopinverse.jpg" alt="Bambu branded campaign and graduation materials" className="h-[360px] w-full object-cover object-center md:h-[560px] lg:h-[680px]" />
           <div className="border-t  border-white/20 py-5 md:flex md:items-center md:justify-between">
             {/* <div className="border border-red-500 flex items-center justify-between gap-4"> */}
                   <p className="text-sm font-bold text-[#b5f536]">Identity + Packaging · 2025</p>

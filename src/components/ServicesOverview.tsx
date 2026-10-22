@@ -43,7 +43,10 @@ export default function ServicesPageContent() {
       <div className="mx-auto max-w-[1260px]">
         <header className="max-w-[920px] border-b border-[#7d9c90]/35 pb-24 lg:pb-28">
           <p className="mb-10 text-sm font-semibold text-[#b5f536]">Services</p>
-          <h1 className="max-w-[1100px] text-8xl font-medium leading-[0.98] tracking-[-0.005em]">What we can do for your business.</h1>
+          {/* <h1 className="max-w-[1100px] text-8xl font-medium leading-[0.98] tracking-[-0.005em]">What we can do for your business.</h1> */}
+           <h1 className="max-w-[1100px] text-[clamp(3.25rem,12vw,9rem)] font-medium leading-[0.96] tracking-[-0.045em] sm:text-8xl sm:tracking-[-0.005em]">
+        What we can do for your business.
+      </h1>
           <p className="mt-8 max-w-[760px] text-sm leading-[1.45] text-[#bdd0c7] md:text-xl">Brand identity, websites, campaigns, print production, event branding and practical business support — planned and made together.</p>
         </header>
 

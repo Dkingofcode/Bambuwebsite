@@ -52,7 +52,7 @@ export default function WorkPage() {
         </div>
 
         <article className="mt-12 overflow-hidden bg-[#0a211c] md:mt-14">
-          <img src="./public/work-shopinverse.jpg" alt="Bambu branded campaign and graduation materials" className="h-[360px] w-full object-cover object-center md:h-[560px] lg:h-[680px]" />
+          <img src="./work-shopinverse.jpg" alt="Bambu branded campaign and graduation materials" className="h-[360px] w-full object-cover object-center md:h-[560px] lg:h-[680px]" />
           <div className="border-t  border-white/20 py-5 md:flex md:items-center md:justify-between">
             {/* <div className="border border-red-500 flex items-center justify-between gap-4"> */}
                   <p className="text-sm font-bold text-[#b5f536]">Identity + Packaging · 2025</p>
